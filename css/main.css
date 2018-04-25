@@ -1,3 +1,4 @@
+/*Blog Style*/
 body {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     margin: 60px auto;
@@ -31,6 +32,12 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+}
+
+footer .icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
 }
 
 /*
