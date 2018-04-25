@@ -5,7 +5,7 @@ date: 2018-04-25
 author: "Chinmay Savadikar"
 ---
 
-So for the past few months, I've been working on my Final Year Undergraduate project - "DeepSense: Deep Learning based Music Emition Recognition".
+So for the past few months, I've been working on my Final Year Undergraduate project - "DeepSense: Deep Learning based Music Emotion Recognition".
 As the name suggests, the goal of the project is recognize emotions in music, using Deep Learning. For this purpose, we're (me, and my 2 project partners, who are not on GitHub),
 are using a stacked architecture of a Hybrid 1-Dimensional Convolutional Neural Network (CNN, ConvNet), and an Long-Short Term Memory (LSTM). We will call this as the *model*.
 The purpose of this post is to explain the [***Hybrid 1-Dimensional CNN***](#hybrid-1-dimensional-cnn), which is really just a ***small*** modification of 2-Dimensional CNN. A big advantage of
