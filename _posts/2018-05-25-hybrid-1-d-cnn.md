@@ -46,6 +46,6 @@ The CNN filters is now looking for certain features in each time segments, indep
 ***Figure 3:*** Hybrid 1-Dimensional CNN. The figure shows just the first 6 steps, but the same operation repeats over the entire input.
 
 ## References
-[1]. Malik, M., Advanne, S., Drossos, K., Virtanen, T., Ticha, D. and Jarina, R. (2017) Stacked Convolutional and Recurrent Neural Networks for Music Emotion Recognition. Proceedings of the 14th Sound and Music Computing Conference, July 5-8, Espoo, Finland.
-[2]. Andrej Karpathy, Stanford University, Dept. of Computer Science, "Connecting Images and Natural Language"[http://purl.stanford.edu/wf528qt3314](http://purl.stanford.edu/wf528qt3314)
-[3]. On word embeddings - Part 1: [http://ruder.io/word-embeddings-1/](http://ruder.io/word-embeddings-1/)
+1. Malik, M., Advanne, S., Drossos, K., Virtanen, T., Ticha, D. and Jarina, R. (2017) Stacked Convolutional and Recurrent Neural Networks for Music Emotion Recognition. Proceedings of the 14th Sound and Music Computing Conference, July 5-8, Espoo, Finland.
+2. Andrej Karpathy, Stanford University, Dept. of Computer Science, "Connecting Images and Natural Language"[http://purl.stanford.edu/wf528qt3314](http://purl.stanford.edu/wf528qt3314)
+3. On word embeddings - Part 1: [http://ruder.io/word-embeddings-1/](http://ruder.io/word-embeddings-1/)
