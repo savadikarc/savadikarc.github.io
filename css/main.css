@@ -77,3 +77,7 @@ ul.posts li {
     line-height: 1;
     margin: 0px 0px 0px 0px;
 }
+
+.post a {
+    color: #2a7ae2;
+}
