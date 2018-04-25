@@ -20,7 +20,7 @@ Now that we know what our input is, let us first see how 2-D and 1-D CNNs work (
 CNNs are meant to operate on spatial data. Audio signals vary spatially in one dimension (time), Images vary in 2 dimensions, and Videos vary in 3 dimensions. A 2-dimensional 
 CNN is used for operating on images. Figure 1 illustrates this operation.
 
-![2-D CNN]( savadikarc.github.io/assets/hybrid/2D_cnn1.png )
+![2-D CNN](https://github.com/savadikarc/savadikarc.github.io/blob/master/assets/hybrid/2D_cnn1.png)
 
 ***Figure 1:*** The dot product of the input (red) and the filter (green) produces an activation map of size ***N' X M' X F*** where F is the number of filters.
 
