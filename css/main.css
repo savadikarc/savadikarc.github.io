@@ -14,7 +14,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #2a7ae2;
 }
 
 a:hover {
@@ -76,8 +76,4 @@ ul.posts li {
     font-size: 30px ;
     line-height: 1;
     margin: 0px 0px 0px 0px;
-}
-
-.post a {
-    color: #2a7ae2;
 }
