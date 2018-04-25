@@ -62,3 +62,10 @@ ul.posts li {
   font-size: 15px;
   color: #818181;
 }
+
+/* Page Style*/
+.post-header .meta {
+  font-size: 15px;
+  color: #818181;
+  margin-top: 5px;
+}
