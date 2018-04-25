@@ -21,6 +21,7 @@ CNNs are meant to operate on spatial data. Audio signals vary spatially in one d
 CNN is used for operating on images. Figure 1 illustrates this operation.
 
 ![2-D CNN](https://github.com/savadikarc/savadikarc.github.io/blob/master/assets/hybrid/2D_cnn1.png)
+
 *Figure 1:* The dot product of the input (red) and the filter (green) produces an activation map of size *N' X M' X F* where F is the number of filters.
 
 ## 1-Dimensional CNN
@@ -29,6 +30,7 @@ Let this representation be of *N* dimensions, and the number of words in a sente
 CNN, the filter ize is set to *T' X N*, where *T'* is the number of timesteps we want to span. Figure 2 illustrates this.
 
 ![1-D CNN](https://github.com/savadikarc/savadikarc.github.io/blob/master/assets/hybrid/1d_cnn.jpg)
+
 *Figure 2:* The dot product works the same as a 2-D CNN, except we only slide the filter in the time-axis.
 
 ## Hybrid 1-Dimensional CNN
@@ -40,6 +42,7 @@ The intuition behind a 2-D filter as applied to an image is that a certain filte
 The CNN filters is now looking for certain features in each time segments, independent of other time segments. The time segments interact with each other due to the LSTM, which is stacked over the CNN. Hence, we are processing the input sequentially.
 
 ![Hybrid 1-Dimensional CNN](https://github.com/savadikarc/savadikarc.github.io/blob/master/assets/hybrid/hybrid_1D_cnn.png)
+
 *Figure 3:* Hybrid 1-Dimensional CNN. The figure shows just the first 6 steps, but the same operation repeats over the entire input.
 
 ## References
