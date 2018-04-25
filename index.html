@@ -7,7 +7,13 @@ title: Chinmay's Blog
 	<p>I will be starting a blog, where I will try and explain Machine Learning algorithms, from SVMs to CNNs to RNNs (and more)! This blog will be written as a means for active learning. If I’m lucky, it will help someone who is just starting out!</p>
 	<p>Although the content here will be accurate to the best of my knowledge, it is possible that there may be some mistakes. If so, do point them out!</p>
 	<p>Stay tuned!</p>
-	<!--div class="posts">
-		
-	</div-->
+	<ul class="posts">
+		{% for post in site.posts %}
+      		<li>
+        		<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        		<br>
+      		</li>
+		{% endfor %}
+	</ul>
 </div><!-- /.home -->
