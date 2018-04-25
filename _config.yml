@@ -1,5 +1,6 @@
 #Site Settings
 title: Chinmay Savadikar's Blog
+baseurl: ""
 
 #Build Settings
 markdown: kramdown
