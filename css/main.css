@@ -68,9 +68,11 @@ ul.posts li {
     color: #818181;
     line-height: 1;
   /*margin-top: 5px;*/
+    margin: 0px 0px 0px 0px;
 }
 
 .post-header h1 {
     font-size: 30px ;
     line-height: 1;
+    margin: 0px 0px 0px 0px;
 }
