@@ -31,13 +31,13 @@ p {
 }
 footer {
     border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    font-size: 15px;
 }
 
 footer .icon {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
 }
 
 /*
