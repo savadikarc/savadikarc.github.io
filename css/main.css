@@ -21,7 +21,6 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
     font-size: 1.5em;
@@ -67,5 +66,9 @@ ul.posts li {
 .post-header .meta {
   font-size: 15px;
   color: #818181;
-  margin-top: 5px;
+  /*margin-top: 5px;*/
+}
+
+.post-header .h1 {
+    font-size: 30px ;
 }
