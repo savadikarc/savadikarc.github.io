@@ -17,7 +17,7 @@ rows represent time segments, and each column represents a frequency. Hence we g
 Now that we know what our input is, let us first see how 2-D and 1-D CNNs work (this will show why we call our CNN as *hybrid*).
  
 ## 2-Dimensional CNN
-CNNs are meant to operate on spatial data. Audio signals vary spatially in one dimension (time), Images vary in 2 dimensions, and Videos in 3. A 2-dimensional 
+CNNs are meant to operate on spatial data. Audio signals vary spatially in one dimension (time), Images vary in 2 dimensions, and Videos vary in 3 dimensions. A 2-dimensional 
 CNN is used for operating on images. Figure 1 illustrates this operation.
 
 [2-D CNN](https://github.com/savadikarc/savadikarc.github.io/blob/master/assets/hybrid/2D_cnn1.png)
