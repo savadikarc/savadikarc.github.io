@@ -29,7 +29,7 @@ In the domain of Natural Language Processing, the input is a sentence. The word 
 Let this representation be of *N* dimensions, and the number of words in a sentence be *T*. Hence, the sentence will now be represented as a ***T X N*** array. In a 1-Dimensional
 CNN, the filter ize is set to ***T' X N***, where ***T'*** is the number of timesteps we want to span. Figure 2 illustrates this.
 
-![1-D CNN](https://github.com/savadikarc/savadikarc.github.io/blob/master/assets/hybrid/1d_cnn.jpg)
+![1-D CNN](/assets/hybrid/1d_cnn.jpg)
 
 ***Figure 2:*** The dot product works the same as a 2-D CNN, except we only slide the filter in the time-axis.
 
@@ -41,7 +41,7 @@ time segments must interact in a very structured way. We fixed the number of row
 The intuition behind a 2-D filter as applied to an image is that a certain filter "looks" for a certain feature in the image. To replicate this, we set the filter size to be small, and slide it over the input feature vector.
 The CNN filters is now looking for certain features in each time segments, independent of other time segments. The time segments interact with each other due to the LSTM, which is stacked over the CNN. Hence, we are processing the input sequentially.
 
-![Hybrid 1-Dimensional CNN](https://github.com/savadikarc/savadikarc.github.io/blob/master/assets/hybrid/hybrid_1D_cnn.png)
+![Hybrid 1-Dimensional CNN](/assets/hybrid/hybrid_1D_cnn.png)
 
 ***Figure 3:*** Hybrid 1-Dimensional CNN. The figure shows just the first 6 steps, but the same operation repeats over the entire input.
 
