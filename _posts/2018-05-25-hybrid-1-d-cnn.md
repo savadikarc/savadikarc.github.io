@@ -39,7 +39,7 @@ If we apply any of the 2 types of CNNs to our input, the output will be a functi
 When we listen to music, we have no knowledge of the time segments to come (at least when we are listening to it for the first time). Thus, the intuition was that these
 time segments must interact in a very structured way. We fixed the number of rows in the filter to 1, as opposed to an arbitrary number in 1-D CNN. Hence, the CNN is processing just one time segment at a time.
 The intuition behind a 2-D filter as applied to an image is that a certain filter "looks" for a certain feature in the image. To replicate this, we set the filter size to be small, and slide it over the input feature vector.
-The CNN filters is now looking for certain features in each time segments, independent of other time segments. The time segments interact with each other due to the LSTM, which is stacked over the CNN. Hence, we are processing the input sequentially.
+The CNN filters are now looking for certain features in each time segments, independent of other time segments. The time segments interact with each other due to the LSTM, which is stacked over the CNN. Hence, we are processing the input sequentially.
 
 ![Hybrid 1-Dimensional CNN](/assets/hybrid/hybrid_1D_cnn.png)
 
