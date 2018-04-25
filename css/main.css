@@ -33,11 +33,17 @@ footer {
     font-size: .8em;
 }
 
+/*
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
 
+
+ul.posts li {
+    list-style: none;
+}
+*/
 .posts .post-link {
   font-size: 20px;
   letter-spacing: -1px;
@@ -48,7 +54,4 @@ ul.posts {
   display: block;
   font-size: 15px;
   color: #818181;
-}
-ul.posts li {
-    list-style: none;
 }
