@@ -6,7 +6,7 @@ author: "Chinmay Savadikar"
 ---
 
 So for the past few months, I've been working on my Final Year Undergraduate project - "DeepSense: Deep Learning based Music Emotion Recognition".
-As the name suggests, the goal of the project is recognize emotions in music, using Deep Learning. For this purpose, we're (me, and my 2 project partners, who are not on GitHub),
+As the name suggests, the goal of the project is to recognize emotions in music, using Deep Learning. For this purpose, we're (me, and my 2 project partners, who are not on GitHub),
 are using a stacked architecture of a Hybrid 1-Dimensional Convolutional Neural Network (CNN, ConvNet), and an Long-Short Term Memory (LSTM). We will call this as the *model*.
 The purpose of this post is to explain the [***Hybrid 1-Dimensional CNN***](#hybrid-1-dimensional-cnn), which is really just a ***small*** modification of 2-Dimensional CNN. A big advantage of
 CNNs is that they employ parameter sharing, and thus reduce the number of parameters by a great number. This also adds an inherent regularization effect. In case you are already familiar with 2-D and 1-D CNNs, feel free to click on the link and head over to Hybrid 1-Dimensional CNN section.
@@ -17,17 +17,16 @@ rows represent time segments, and each column represents a frequency. Hence we g
 Now that we know what our input is, let us first see how 2-D and 1-D CNNs work (this will show why we call our CNN as *hybrid*).
  
 ### 2-Dimensional CNN
-CNNs are meant to operate on spatial data. Audio signals vary spatially in one dimension (time), Images vary in 2 dimensions, and Videos vary in 3 dimensions. A 2-dimensional 
-CNN is used for operating on images. Figure 1 illustrates this operation.
+CNNs are meant to operate on spatial data. Audio signals vary spatially in one dimension (time), Images vary in 2 dimensions, and Videos vary in 3 dimensions. A 2-dimensional CNN is used for operating on images. I will write a separate detailed post, but I'd recommend watching the [cs231n](http://cs231n.stanford.edu/) [lecture on CNNs](https://youtu.be/bNb2fEVKeEo?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv). Figure 1 illustrates this operation.
 
 ![2-D CNN](/assets/hybrid/2D_cnn1.png)
 
 ***Figure 1:*** The dot product of the input (red) and the filter (green) produces an activation map of size ***N' X M' X F*** where F is the number of filters.
 
 ### 1-Dimensional CNN
-In the domain of Natural Language Processing, the input is a sentence. The word are typically converted into dense, lower dimensional representation called word embeddings.
+In the domain of Natural Language Processing, the input is a sentence. The words are typically converted into dense, lower dimensional representation called word embeddings.
 Let this representation be of *N* dimensions, and the number of words in a sentence be *T*. Hence, the sentence will now be represented as a ***T X N*** array. In a 1-Dimensional
-CNN, the filter ize is set to ***T' X N***, where ***T'*** is the number of timesteps we want to span. Figure 2 illustrates this.
+CNN, the filter size is set to ***T' X N***, where ***T'*** is the number of timesteps we want to span. Figure 2 illustrates this.
 
 ![1-D CNN](/assets/hybrid/1d_cnn.jpg)
 
