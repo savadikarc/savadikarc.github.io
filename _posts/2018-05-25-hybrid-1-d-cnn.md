@@ -2,6 +2,7 @@
 layout: post
 title: "Hybrid 1-Dimensional Convolutional Neural Network"
 date: 2018-04-25
+comments: true
 author: "Chinmay Savadikar"
 ---
 
