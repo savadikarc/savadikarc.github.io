@@ -12,9 +12,8 @@ The purpose of this post is to explain the [***Hybrid 1-Dimensional CNN***](#hyb
 CNNs is that they employ parameter sharing, and thus reduce the number of parameters by a great number. This also adds an inherent regularization effect. In case you are already familiar with 2-D and 1-D CNNs, feel free to click on the link and head over to Hybrid 1-Dimensional CNN section.
 
 ### Input
-We use Mel-Frequency Cepstral Coefficients as the input to the model, which represent the amplitudes of frequencies at various time instances. It is just an array where
-rows represent time segments, and each column represents a frequency. Hence we get a two dimensional array, which can be interpreted as a sequence of features. 
-Now that we know what our input is, let us first see how 2-D and 1-D CNNs work (this will show why we call our CNN as *hybrid*).
+We use Mel-Frequency Cepstral Coefficients as the input to the model, which represent the amplitudes of frequencies at various time instances. It is an array where rows represent time segments, and each column represents a frequency. Hence we get a two dimensional array, which can be interpreted as a sequence of frequency components. 
+Now that we know what our input is, let us first discuss how 2-D and 1-D CNNs work (this will show why we call our CNN as *hybrid*).
  
 ### 2-Dimensional CNN
 CNNs are meant to operate on spatial data. Audio signals vary spatially in one dimension (time), Images vary in 2 dimensions, and Videos vary in 3 dimensions. A 2-dimensional CNN is used for operating on images. I will write a separate detailed post, but I'd recommend watching the [cs231n](http://cs231n.stanford.edu/) [lecture on CNNs](https://youtu.be/bNb2fEVKeEo?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv). Figure 1 illustrates this operation.
@@ -24,7 +23,7 @@ CNNs are meant to operate on spatial data. Audio signals vary spatially in one d
 ***Figure 1:*** The dot product of the input (red) and the filter (green) produces an activation map of size ***N' X M' X F*** where F is the number of filters.
 
 ### 1-Dimensional CNN
-In the domain of Natural Language Processing, the input is a sentence. The words are typically converted into dense, lower dimensional representation called word embeddings.
+In Natural Language Processing, the input is a sentence. The words are typically converted into dense, lower dimensional representation called word embeddings.
 Let this representation be of *N* dimensions, and the number of words in a sentence be *T*. Hence, the sentence will now be represented as a ***T X N*** array. In a 1-Dimensional
 CNN, the filter size is set to ***T' X N***, where ***T'*** is the number of timesteps we want to span. Figure 2 illustrates this.
 
