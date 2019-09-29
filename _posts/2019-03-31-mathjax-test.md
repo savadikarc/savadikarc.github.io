@@ -7,6 +7,8 @@ comments: true
 author: "Chinmay Savadikar"
 ---
 
+## A small test to see if MathJax is working.
+
 $$
 \sum_{i=1}^{N} x_i
 $$
