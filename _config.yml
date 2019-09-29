@@ -1,7 +1,7 @@
 #Site Settings
-title: Chinmay Savadikar's Blog
+title: "Chinmay Savadikar's Blog"
 baseurl: ""
-url: https://savadikarc.github.io
+url: "https://savadikarc.github.io"
 
 #Build Settings
 markdown: kramdown
