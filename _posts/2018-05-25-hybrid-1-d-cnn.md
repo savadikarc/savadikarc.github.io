@@ -4,6 +4,7 @@ title: "Hybrid 1-Dimensional Convolutional Neural Network"
 date: 2018-04-25
 comments: true
 author: "Chinmay Savadikar"
+categories: post
 ---
 
 So for the past few months, I've been working on my Final Year Undergraduate project - "DeepSense: Deep Learning based Music Emotion Recognition".
