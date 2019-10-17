@@ -2,7 +2,25 @@
 title: "Chinmay Savadikar's Blog"
 baseurl: ""
 url: "https://savadikarc.github.io"
+rants: false
+
+# Social Media
+social:
+    icons: "original"
+    _github: 
+        show: true
+        base: "https://github.com/"
+        username: savadikarc
+    _twitter: 
+        show: true
+        base: "https://twitter.com/"
+        username: savadikarc
+    _linkedin: 
+        show: true
+        base: "https://www.linkedin.com/in/"
+        username: savadikar-chinmay
 
 #Build Settings
 markdown: kramdown
 permalink: pretty
+

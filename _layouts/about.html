@@ -15,30 +15,49 @@
 				<img class="portrait-picture" src="/assets/stylized_self.png" height="200px" width="200px" title="Stylized Me">
 				
 				<ul class="web-presence-list">
+				
 					<li>
-						<a href="https://github.com/savadikarc" title="Github">
-							<span class="github-icon">
-								<img class="icon" src="/assets/GitHub-Mark-32px.png">
-							</span>
-							<!--span>Github</span-->
+						<a href="{{ site.social._github.username | prepend: site.social._github.base }}" title="Github">
+							{% if site.social.icons == "original" %}
+								<span class="github-icon">
+									<img class="icon" src="/assets/GitHub-Mark-32px.png">
+								</span>
+							{% else %}
+								<svg class="svg-icon">
+									<use xlink:href="/assets/minima-social-icons.svg#github">
+									</use>
+								</svg>
+							{% endif %}
 						</a>
 					</li>
 					
 					<li>
-						<a href="https://twitter.com/savadikarc" title="Twitter">
-							<span class="twitter-icon">
-								<img class="icon" src="/assets/Twitter_Logo_Blue.png">
-							</span>
-							<!--span>Twitter</span-->
+						<a href="{{ site.social._twitter.username | prepend: site.social._twitter.base }}" title="Twitter">
+							{% if site.social.icons == "original" %}
+								<span class="twitter-icon">
+									<img class="icon" src="/assets/Twitter_Logo_Blue.png">
+								</span>
+							{% else %}
+								<svg class="svg-icon">
+									<use xlink:href="/assets/minima-social-icons.svg#twitter">
+									</use>
+								</svg>
+							{% endif %}
 						</a>
 					</li>
 					
 					<li>
-						<a href="https://www.linkedin.com/in/savadikar-chinmay/" title="LinkedIn">
-							<span class="linkedin-icon">
-								<img class="icon" src="/assets/linkedin_logo.png">
-							</span>
-							<!--span>LinkedIn</span-->
+						<a href="{{ site.social._linkedin.username | prepend: site.social._linkedin.base }}" title="LinkedIn">
+							{% if site.social.icons == "original" %}
+								<span class="linkedin-icon">
+									<img class="icon" src="/assets/linkedin_logo.png">
+								</span>
+							{% else %}
+								<svg class="svg-icon">
+									<use xlink:href="/assets/minima-social-icons.svg#linkedin">
+									</use>
+								</svg>
+							{% endif %}
 						</a>
 					</li>
 					
