@@ -48,8 +48,19 @@ footer {
 
 footer .icon {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.5 ;
+	vertical-align: middle ;
+}
+
+footer .icon:hover {
+	opacity: 0.9 ;
+}
+
+footer a:hover {
+	text-decoration: none ;
+	cursor: pointer ;
 }
 
 .col-wrapper div {
@@ -82,11 +93,17 @@ footer .icon {
 	border-radius: 50% ;
 }
 
-.icon {
-	opacity: 0.5 ;
-	vertical-align: middle ;
-	height: 20px ;
-	width: 20px ;
+.svg-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    fill: currentColor;
+    padding: 5px 3px 2px 5px;
+    vertical-align: text-bottom;
+}
+
+.svg-icon:hover {
+	fill: rgba(0, 0, 0, 1.0) ;
 }
 
 /* Posts Style*/

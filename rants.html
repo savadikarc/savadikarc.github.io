@@ -1,8 +1,19 @@
 ---
-layout: default
+layout: about
 comments: false
 title: Chinmay's Rants
 ---
 <div class="rants">
-  <h> A space for my musings, from meaningless rants to amateur (many times stupid) philosophy. </h>
-</div>
+	<h>A space for my musings, from meaningless rants to amateur (many times stupid) philosophy.</h>
+	<ul class="posts">
+		{% if site.rants %}
+			{% for post in site.categories.rant %}
+	      		<li>
+				<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				<br>
+	      		</li>
+			{% endfor %}
+		{% endif %}
+	</ul>
+</div><!-- /.home -->
