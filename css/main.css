@@ -117,13 +117,16 @@ footer .icon {
     width: 16px;
     height: 16px;
     display: inline-block;
-    fill: currentColor;
+    /* fill: currentColor;*/
+    fill: #2a7ae2 ;
+    opacity: 0.6 ;
     padding: 5px 3px 2px 5px;
     vertical-align: text-bottom;
 }
 
 .svg-icon:hover {
-	fill: rgba(0, 0, 0, 1.0) ;
+	/* fill: rgba(0, 0, 0, 1.0) ; */
+	opacity: 0.9 ;
 }
 
 /* Posts Style*/

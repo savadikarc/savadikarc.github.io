@@ -5,6 +5,7 @@ nav {
 
 .col-wrapper .container {
 	border-left: 1px solid rgba(0, 0, 0, 0.5) ;
+	font-family: Monaco,Menlo,monospace,sans-serif;
 }
 
 /*CV Styling*/
@@ -49,4 +50,14 @@ nav {
 
 .container .cv .projects .project-date {
 	float: right ;
+}
+
+.container .cv .section-title {
+	font-size: 1.5em ;
+	margin: 0pt 0pt 0pt 0pt ;
+}
+
+.container .cv h2 {
+	font-size: 1em ;
+	margin: 0pt 0pt 0pt 0pt ;
 }

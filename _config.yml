@@ -6,7 +6,7 @@ rants: false
 
 # Social Media
 social:
-    icons: "svg"
+    icons: "original"
     _github: 
         show: true
         base: "https://github.com/"
@@ -20,7 +20,8 @@ social:
         base: "https://www.linkedin.com/in/"
         username: savadikar-chinmay
 
-style:  davewhipp
+# Show / Hide some parts of the website
+show_cv: false
 
 #Build Settings
 markdown: kramdown

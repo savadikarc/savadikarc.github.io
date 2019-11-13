@@ -13,3 +13,5 @@ categories: post
 $$
 \sum_{i=1}^{N} x_i
 $$
+
+Where, $$x \  \epsilon \  \mathbb{R}^1$$
