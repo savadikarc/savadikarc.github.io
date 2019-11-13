@@ -11,7 +11,9 @@
         		<li><a href="/">Home</a></li>
 	        	<li><a href="/about">About</a></li>
         		<li><a href="/rants">Rants</a></li-->
-        		<!--li><a href="/blog">Blog</a></li-->
+        		{% if site.show_cv %}
+        			<li><a href="/cv">CV</a></li>
+        		{% endif %}
     		</ul>
 		</nav>
 		<div class="container">

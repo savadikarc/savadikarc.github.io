@@ -20,6 +20,9 @@ social:
         base: "https://www.linkedin.com/in/"
         username: savadikar-chinmay
 
+# Show / Hide some parts of the website
+show_cv: false
+
 #Build Settings
 markdown: kramdown
 permalink: pretty

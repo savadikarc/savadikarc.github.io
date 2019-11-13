@@ -1,2 +1,2 @@
 # savadikarc.github.io
-Blog (Big surprise)
+Personal Blog
