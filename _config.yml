@@ -3,6 +3,7 @@ title: "Chinmay Savadikar's Blog"
 baseurl: ""
 url: "https://savadikarc.github.io"
 rants: false
+thumbnail-url: "/assets/thumbnails/"
 
 # Social Media
 social:

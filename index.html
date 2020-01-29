@@ -12,7 +12,7 @@ title: Chinmay's Blog
 	  		<li>
 	  			<div class="post-wrapper">
 						<div class="post-thumbnail">
-							<img class="post-thumbnail-img" src="/assets/self_starry_night.png">
+							<img class="post-thumbnail-img" src="{{ post.thumbnail | prepend: site.thumbnail-url }}">
 						</div>
 						<div class="post-container">
 							<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>

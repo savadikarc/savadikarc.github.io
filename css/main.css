@@ -143,6 +143,7 @@ ul.posts li {
 	clear: both; 	
 	margin-bottom:0.7em;
 	height: 3em;
+	width: 100%;
 }
 
 .posts .post-wrapper .post-container {
