@@ -129,7 +129,7 @@ footer .icon {
 	opacity: 0.9 ;
 }
 
-/* Posts Style*/
+/* Posts-List Style*/
 
 ul.posts li {
     list-style: none;
@@ -139,21 +139,51 @@ ul.posts li {
 
 .posts { list-style-type: none; }
 
-.posts li { margin-bottom: 30px; }
+.posts .post-wrapper { 
+	clear: both; 	
+	margin-bottom:0.7em;
+	height: 3em;
+}
+
+.posts .post-wrapper .post-container {
+	float: left;
+	margin-left: 0.3em;
+}
+
+.posts .post-thumbnail {
+	float: left;
+	width: 10%;
+	height: 100%;
+}
+
+.posts .post-thumbnail .post-thumbnail-img {
+	height: 100%;
+  width: 100%;
+}
 
 .posts .post-link {
   font-size: 20px;
   letter-spacing: 0px;
-  line-height: 1;
+  line-height: 1.3em;
   color: #2a7ae2;
 }
 
 .posts .post-date {
   display: block;
   font-size: 15px;
+  line-height: 1.3em;
   color: #818181;
 }
 
+.posts .post-tldr {
+  display: block;
+  font-size: 15px;
+  line-height: 1.3em;
+  color: #333;
+}
+
+
+/*Posts Style*/
 .post-header {
     margin-top: 12px;
 }
