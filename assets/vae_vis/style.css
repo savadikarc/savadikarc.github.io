@@ -1,0 +1,24 @@
+img[src*="#thumbnail"] {
+   width:500px;
+   height:500px;
+}
+
+img[src*="#cvae"] {
+   width:190px;
+   height:190px;
+}
+
+img[src*="#cvae-latent"] {
+	width:500px;
+	height:500px;
+	text-align: center;
+}
+
+td {
+	text-align: center;
+	font-size: 14px;
+}
+
+table {
+	margin: auto;
+}
