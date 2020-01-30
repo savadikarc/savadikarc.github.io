@@ -6,6 +6,7 @@ date: 2019-03-31
 comments: true
 author: "Chinmay Savadikar"
 categories: post
+thumbnail: "vae.gif"
 ---
 
 ## A small test to see if MathJax is working.
