@@ -3,18 +3,22 @@ layout: about
 comments: false
 title: Chinmay's Rants
 ---
-<div class="rants">
-	<h>A space for my musings, from meaningless rants to amateur (many times stupid) philosophy.</h><br><br>
-	<h>I am porting all my posts from Wordpress to here. Till then, head over to <a href="https://chinmaysavadikarrants.wordpress.com" style="color: #2a7ae2">https://chinmaysavadikarrants.wordpress.com</a> </h>
-	<ul class="posts">
-		{% if site.rants %}
-			{% for post in site.categories.rant %}
-	      		<li>
-				<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-				<br>
-	      		</li>
-			{% endfor %}
-		{% endif %}
-	</ul>
+<div class="row">
+	<div class="col">
+		<div class="content-container">
+			<h>A space for my musings, from meaningless rants to amateur (many times stupid) philosophy.</h><br>
+			<h>I am porting all my posts from Wordpress to here. Till then, head over to <a class="post-link" href="https://chinmaysavadikarrants.wordpress.com">https://chinmaysavadikarrants.wordpress.com</a> </h>
+		</div>
+		<ul class="posts">
+			{% if site.rants %}
+				{% for post in site.categories.rant %}
+					<li>
+					<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+					<br>
+					</li>
+				{% endfor %}
+			{% endif %}
+		</ul>
+	</div>
 </div><!-- /.home -->

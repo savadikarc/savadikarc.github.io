@@ -3,84 +3,114 @@
 <html>
 	<head>
 		<title>{{ page.title }}</title>
-		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	</head>
 	
 	<body>
 		
-		<div class="col-wrapper">
-			
-			<div class="left-sidebar">
-				<img class="portrait-picture" src="/assets/self_starry_night.png" height="200px" width="200px" title="Stylized Me">
+		<div class="container-fluid">
+		
+			<div class="row col-wrapper">
 				
-				<span class="name">Chinmay Savadikar</span>
+				<div class="bg-dark col-sm-3 left-sidebar">
 				
-				<ul class="web-presence-list">
-				
-					<li>
-						<a href="{{ site.social._github.username | prepend: site.social._github.base }}" title="Github">
-							{% if site.social.icons == "original" %}
-								<span class="github-icon">
-									<img class="icon" src="/assets/GitHub-Mark-32px.png">
-								</span>
-							{% else %}
-								<svg class="svg-icon">
-									<use xlink:href="/assets/minima-social-icons.svg#github">
-									</use>
-								</svg>
-							{% endif %}
-						</a>
-					</li>
+						<div class="row portrait">
+							<div class="col">
+								<img class="img-fluid portrait-picture" src="/assets/self_starry_night.png" height="200px" width="200px" title="Stylized Me">
+							</div>
+						</div>
 					
-					<li>
-						<a href="{{ site.social._twitter.username | prepend: site.social._twitter.base }}" title="Twitter">
-							{% if site.social.icons == "original" %}
-								<span class="twitter-icon">
-									<img class="icon" src="/assets/Twitter_Logo_Blue.png">
-								</span>
-							{% else %}
-								<svg class="svg-icon">
-									<use xlink:href="/assets/minima-social-icons.svg#twitter">
-									</use>
-								</svg>
-							{% endif %}
-						</a>
-					</li>
-					
-					<li>
-						<a href="{{ site.social._linkedin.username | prepend: site.social._linkedin.base }}" title="LinkedIn">
-							{% if site.social.icons == "original" %}
-								<span class="linkedin-icon">
-									<img class="icon" src="/assets/linkedin_logo.png">
-								</span>
-							{% else %}
-								<svg class="svg-icon">
-									<use xlink:href="/assets/minima-social-icons.svg#linkedin">
-									</use>
-								</svg>
-							{% endif %}
-						</a>
-					</li>
-					
-				</ul>
+						<div class="row">
+							<div class="col">
+								<div class="row">
+									<p class="first-name">Chinmay</p>
+								</div>
+								<div class="row">
+									<p class="last-name">Savadikar</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+						
+						<div class="col">
+						
+							<ul class="nav media-list">
+							
+								<li class="nav-item">
+									<a href="{{ site.social._github.username | prepend: site.social._github.base }}" title="Github">
+										{% if site.social.icons == "original" %}
+											<span class="github-icon">
+												<img class="icon" src="/assets/GitHub-Mark-32px.png">
+											</span>
+										{% else %}
+											<svg class="svg-icon">
+												<use xlink:href="/assets/minima-social-icons.svg#github">
+												</use>
+											</svg>
+										{% endif %}
+									</a>
+								</li>
+								
+								<li class="nav-item">
+									<a href="{{ site.social._twitter.username | prepend: site.social._twitter.base }}" title="Twitter">
+										{% if site.social.icons == "original" %}
+											<span class="twitter-icon">
+												<img class="icon" src="/assets/Twitter_Logo.png">
+											</span>
+										{% else %}
+											<svg class="svg-icon">
+												<use xlink:href="/assets/minima-social-icons.svg#twitter">
+												</use>
+											</svg>
+										{% endif %}
+									</a>
+								</li>
+								
+								<li class="nav-item">
+									<a href="{{ site.social._linkedin.username | prepend: site.social._linkedin.base }}" title="LinkedIn">
+										{% if site.social.icons == "original" %}
+											<span class="linkedin-icon">
+												<img class="icon" src="/assets/linkedin_logo.png">
+											</span>
+										{% else %}
+											<svg class="svg-icon">
+												<use xlink:href="/assets/minima-social-icons.svg#linkedin">
+												</use>
+											</svg>
+										{% endif %}
+									</a>
+								</li>
+							</ul>
+						</div>
+						</div>
+				</div>
 				
-			</div>
+				<div class="col-sm-9">
+					
+						<div class="row">
+							<div class="col">
+
+									<ul class="nav custom-nav">
+										<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+										<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+										<li class="nav-item"><a class="nav-link" href="/rants">Rants</a></li-->
+										{% if site.show_cv %}
+											<li class="nav-item"><a class="nav-link" href="/cv">CV</a></li>
+										{% endif %}
+									</ul>
+
+							</div>
+						</div>
+					
+						{{ content }}
+
+				</div>
 			
-			<div class="container">
-				<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/rants">Rants</a></li-->
-        		{% if site.show_cv %}
-        			<li><a href="/cv">CV</a></li>
-        		{% endif %}
-    		</ul>
-		</nav>
-			
-				{{ content }}
-			</div>
+			</div>	
 			
 		</div>
 		

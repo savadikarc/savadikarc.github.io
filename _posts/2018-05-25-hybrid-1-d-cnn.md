@@ -6,7 +6,7 @@ comments: true
 author: "Chinmay Savadikar"
 categories: post
 summary: true
-tldr: A description of my BE Project.
+tldr: A description of a component my BE Project.
 thumbnail: "conv_filter.gif"
 ---
 
