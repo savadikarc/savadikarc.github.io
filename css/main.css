@@ -82,6 +82,9 @@ p {
 
 .col-wrapper .left-sidebar .portrait-picture {
 	border-radius: 50% ;
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+	border: 5px solid rgba(255, 255, 255, 0.3) ;
 	/*margin: 0 auto ;*/
 }
 
