@@ -7,8 +7,10 @@ body {
 }
 
 /*Top navigation bar*/
+
 .custom-nav {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
+	border-top: 1px solid rgba(0, 0, 0, 0.2) ;
 }
 
 footer ul {
