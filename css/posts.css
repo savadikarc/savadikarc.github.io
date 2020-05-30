@@ -1,6 +1,7 @@
 /*Blog Style*/
 body {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    /*font-family:'Helvetica', 'Arial', 'Sans-Serif';*/
+	font-family: 'Actor' ;
     margin: 60px auto;
     width: 75%;
 	/*background-color: hsla(231, 15%, 13%, 1) ;*/

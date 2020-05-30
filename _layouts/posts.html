@@ -4,8 +4,10 @@
 		<title>{{ page.title }}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/posts.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 		
 		<!--mathjax-->
@@ -25,7 +27,7 @@
 							<ul class="nav custom-nav">
 								<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
 								<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-								<li class="nav-item"><a class="nav-link" href="/rants">Rants</a></li-->
+								<li class="nav-item"><a class="nav-link" href="/rants">Rants</a></li>
 								{% if site.show_cv %}
 									<li class="nav-item"><a class="nav-link" href="/cv">CV</a></li>
 								{% endif %}
@@ -35,7 +37,7 @@
 					</div>
 					
 					{{ content }}
-					
+					<!-->--------------<-->
 					<div class="row">
 						
 							<div class="col">
@@ -89,59 +91,11 @@
 								</ul>
 							</div>
 						</div>
-					
-					<!--div class="row">
-						<footer>
-							<ul>
-								<li>
-									<a href="{{ site.social._github.username | prepend: site.social._github.base }}" title="Github">
-										{% if site.social.icons == "original" %}
-											<span class="github-icon">
-												<img class="icon" src="/assets/GitHub-Mark-32px_dark.png">
-											</span>
-										{% else %}
-											<svg class="svg-icon">
-												<use xlink:href="/assets/minima-social-icons.svg#github">
-												</use>
-											</svg>
-										{% endif %}
-									</a>
-								</li>
-								<li>
-									<a href="{{ site.social._twitter.username | prepend: site.social._twitter.base }}" title="Twitter">
-										{% if site.social.icons == "original" %}
-											<span class="twitter-icon">
-												<img class="icon" src="/assets/Twitter_Logo_Blue.png">
-											</span>
-										{% else %}
-											<svg class="svg-icon">
-												<use xlink:href="/assets/minima-social-icons.svg#twitter">
-												</use>
-											</svg>
-										{% endif %}
-									</a>
-								</li>
-								
-								<li>
-									<a href="{{ site.social._linkedin.username | prepend: site.social._linkedin.base }}" title="LinkedIn">
-										{% if site.social.icons == "original" %}
-											<span class="linkedin-icon">
-												<img class="icon" src="/assets/linkedin_logo.png">
-											</span>
-										{% else %}
-											<svg class="svg-icon">
-												<use xlink:href="/assets/minima-social-icons.svg#linkedin">
-												</use>
-											</svg>
-										{% endif %}
-									</a>
-								</li>
-								
-							</ul>
-						</footer>
-					</div-->
+				<!-->------------------------------------<-->
 				</div>
 			</div>
 		</div>
 	</body>
 </html>
+
+<!--Note: flex-column for ul-->
