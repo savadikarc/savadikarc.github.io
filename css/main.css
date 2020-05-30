@@ -72,14 +72,6 @@ a:hover {
 	margin-bottom: 0.5re ;
 }
 
-/*
-.col-wrapper .left-sidebar .icon {
-	opacity: 0.5 ;
-	vertical-align: middle ;
-	height: 32px ;
-	width: 32px ;
-}
-*/
 /***************************
 Posts
 **************************/
@@ -103,10 +95,6 @@ Posts
 	display: none ;
 }
 
-
-
-
-
 /* Posts-List Style*/
 
 ul.posts li {
@@ -116,7 +104,7 @@ ul.posts li {
 .home h1 { margin-bottom: 25px; }
 
 .posts { 
-	padding-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
 	padding-left: 1.0rem; 
 }
 
