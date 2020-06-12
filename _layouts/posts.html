@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/posts.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,14 +38,31 @@
 					</div>
 					
 					{{ content }}
-					<!-->--------------<-->
 					<div class="row">
 						
 							<div class="col">
 							
 								<ul class="nav media-list">
-								
+									
 									<li class="nav-item">
+										<a href="{{ site.social._github.username | prepend: site.social._github.base }}" title="Github">
+													<i class="fa fa-github"></i>
+										</a>
+									</li>
+									
+									<li class="nav-item">
+										<a href="{{ site.social._twitter.username | prepend: site.social._twitter.base }}" title="Twitter">
+													<i class="fa fa-twitter"></i>
+										</a>
+									</li>
+									
+									<li class="nav-item">
+										<a href="{{ site.social._linkedin.username | prepend: site.social._linkedin.base }}" title="LinkedIn">
+													<i class="fa fa-linkedin"></i>
+										</a>
+									</li>
+									
+									<!--li class="nav-item">
 										<a href="{{ site.social._github.username | prepend: site.social._github.base }}" title="Github">
 											{% if site.social.icons == "original" %}
 												<span class="github-icon">
@@ -87,11 +105,10 @@
 												</svg>
 											{% endif %}
 										</a>
-									</li>
+									</li-->
 								</ul>
 							</div>
 						</div>
-				<!-->------------------------------------<-->
 				</div>
 			</div>
 		</div>
