@@ -1,0 +1,38 @@
+---
+layout: about
+title: Chinmay's Blog
+---
+<div class="row">
+	<div class="col">
+		<div class="content-container">
+			<h1>Blog</h1>
+			<p>I am writing this blog as a means for active learning. It's content will be whatever I am studying at that particular time.</p>
+			<p>Although the content here will be accurate to the best of my knowledge, it is possible that there may be some mistakes. 
+				If so, do point them out! As a selfish interest, I hope to get some free reviews and corrections on my posts!</p>
+		</div>
+		
+		<div class="post-container">
+				{% for post in site.categories.post %}
+				
+					<div class="card-container">
+						<div class="card flex-row flex-wrap mt-2 post-card">
+							<div class="card-header border-0">
+								<img class="img-fluid" src="{{ post.thumbnail | prepend: site.thumbnail-url }}" height="64px" width="64px">
+							</div>
+							<div class="card-block px-2">
+								<a class="post-link card-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+								<!--h5 class="card-title">{{ post.title }}</h5-->
+								<p class="card-subtitle mb-1 text-muted">{{ post.date | date: "%b %-d, %Y" }}</p>
+								<p class="card-text">{{ post.tldr }}</p>
+							</div>
+							<div class="w-200"></div>
+							<!--div class="card-footer w-100 text-muted">
+								Footer stating cats are CUTE little animals
+							</div-->
+						</div>
+					</div>
+				
+				{% endfor %}
+		</div>
+	</div>
+</div>

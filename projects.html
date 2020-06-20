@@ -1,0 +1,26 @@
+---
+layout: about
+title: Projects
+---
+<div class="row">
+	<div class="col">
+		<div class="content-container">
+			<h1>Projects</h1>
+		</div>
+		
+		<div class="project-container">
+			{% for project in site.data.projects %}
+				<div class="card-container">
+					<div class="card flex-row flex-wrap mt-2 project-card">
+						<div class="card-block px-2">
+							<p class="card-title">{{ project.name }}</p>
+							<p class="card-subtitle text-muted">{{ project.description }}</p>
+							<a class="post-link card-text" href="{{ project.repo }}">{{ project.repo }}</a>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		</div>
+	</div>
+</div>
