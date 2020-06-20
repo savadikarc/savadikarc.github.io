@@ -1,35 +1,41 @@
 ---
 layout: about
-title: Chinmay's Blog
+title: Chinmay Savadikar
 ---
 <div class="row">
 	<div class="col">
 		<div class="content-container">
-			<h1>Hi There!</h1>
-			<p>I am writing this blog as a means for active learning. It's content will be whatever I am studying at that particular time.</p>
-			<p>Although the content here will be accurate to the best of my knowledge, it is possible that there may be some mistakes. 
-				If so, do point them out! As a selfish interest, I hope to get some free reviews and corrections on my posts!</p>
+			<h1>Chinmay Savadikar</h1>
+			<p>I am a Machine Learning Engineer with a keep interest in Computer Vision. I like to develop robust, end-to-end Computer Vision solutions using both, Deep Learning and traditional Computer Vision algorithms.</p>
+
+			<p>I have extensive experience with problems in Image Recognition, Object Detection, and Semantic Segmentation, and like to work on the full stack of Machine Learning and 
+			Deep Learning pipeline - Data Visualization, Data Annotation, incremental training and fine-tuning of models, and deployment.</p>
+
+			<p>On the non-technical side, I enjoy playing Football, listening to Oldies Rock Music, reading an occasional Manga, and watching comedy series. </p>
+			
 		</div>
+		
 		<div class="post-container">
 				{% for post in site.categories.post %}
-					<div class="row posts">
-						<div class="col-xl-1 col-lg-1 col-md-2 col-sm-2 col-2">
-							<!--div class="post-thumbnail"-->
-								<img class="img-fluid post-thumbnail-img" src="{{ post.thumbnail | prepend: site.thumbnail-url }}">
-							<!--/div-->
-						</div>
-						<div class="col-xl-10  col-lg-10 col-md-10 col-sm-10 col-10">
-							<div class="row">
-								<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+				
+					<div class="card-container">
+						<div class="card flex-row flex-wrap mt-2 post-card">
+							<div class="card-header border-0">
+								<img class="img-fluid" src="{{ post.thumbnail | prepend: site.thumbnail-url }}" height="64px" width="64px">
 							</div>
-							<div class="row">
-								<span><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
+							<div class="card-block px-2">
+								<a class="post-link card-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+								<!--h5 class="card-title">{{ post.title }}</h5-->
+								<p class="card-subtitle mb-1 text-muted">{{ post.date | date: "%b %-d, %Y" }}</p>
+								<p class="card-text">{{ post.tldr }}</p>
 							</div>
-							<div class="row">
-								<span class="post-tldr">{{ post.tldr }}</span>
-							</div>
+							<div class="w-200"></div>
+							<!--div class="card-footer w-100 text-muted">
+								Footer stating cats are CUTE little animals
+							</div-->
 						</div>
 					</div>
+				
 				{% endfor %}
 		</div>
 	</div>

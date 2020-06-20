@@ -27,7 +27,7 @@
 
 							<ul class="nav custom-nav">
 								<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-								<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+								<li class="nav-item"><a class="nav-link" href="/aboutme">About</a></li>
 								<li class="nav-item"><a class="nav-link" href="/rants">Rants</a></li>
 								{% if site.show_cv %}
 									<li class="nav-item"><a class="nav-link" href="/cv">CV</a></li>
@@ -38,6 +38,7 @@
 					</div>
 					
 					{{ content }}
+					
 					<div class="row">
 						
 							<div class="col">
@@ -61,51 +62,7 @@
 													<i class="fa fa-linkedin"></i>
 										</a>
 									</li>
-									
-									<!--li class="nav-item">
-										<a href="{{ site.social._github.username | prepend: site.social._github.base }}" title="Github">
-											{% if site.social.icons == "original" %}
-												<span class="github-icon">
-													<img class="icon" src="/assets/GitHub-Mark-32px_dark.png">
-												</span>
-											{% else %}
-												<svg class="svg-icon">
-													<use xlink:href="/assets/minima-social-icons.svg#github">
-													</use>
-												</svg>
-											{% endif %}
-										</a>
-									</li>
-									
-									<li class="nav-item">
-										<a href="{{ site.social._twitter.username | prepend: site.social._twitter.base }}" title="Twitter">
-											{% if site.social.icons == "original" %}
-												<span class="twitter-icon">
-													<img class="icon" src="/assets/Twitter_Logo_Blue.png">
-												</span>
-											{% else %}
-												<svg class="svg-icon">
-													<use xlink:href="/assets/minima-social-icons.svg#twitter">
-													</use>
-												</svg>
-											{% endif %}
-										</a>
-									</li>
-									
-									<li class="nav-item">
-										<a href="{{ site.social._linkedin.username | prepend: site.social._linkedin.base }}" title="LinkedIn">
-											{% if site.social.icons == "original" %}
-												<span class="linkedin-icon">
-													<img class="icon" src="/assets/linkedin_logo.png">
-												</span>
-											{% else %}
-												<svg class="svg-icon">
-													<use xlink:href="/assets/minima-social-icons.svg#linkedin">
-													</use>
-												</svg>
-											{% endif %}
-										</a>
-									</li-->
+
 								</ul>
 							</div>
 						</div>
