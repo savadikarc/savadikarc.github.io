@@ -1,5 +1,5 @@
 - name: iWildCam 2020 - FGVC7 (Kaggle)
-  description: Categorize animals in the camera-trap images. Ranked 14th (top 12%) out of 124 teams.
+  description: Categorize animals in the camera-trap images. Ranked 14th (top 12%) out of 126 teams.
   repo: https://github.com/savadikarc/iWildCam2020
     
 - name: Generative Models for Skin Lesion Images
