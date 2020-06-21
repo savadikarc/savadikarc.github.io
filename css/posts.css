@@ -1,10 +1,8 @@
 /*Blog Style*/
 body {
-    /*font-family:'Helvetica', 'Arial', 'Sans-Serif';*/
 	font-family: 'Actor' ;
     margin: 60px auto;
     width: 75%;
-	/*background-color: hsla(231, 15%, 13%, 1) ;*/
 }
 
 /*General hyperlink styling*/
@@ -29,20 +27,20 @@ p {
 }
 
 /*Top navigation bar*/
+.top-bar {
+	background: #FFFFFF ;
+}
 .custom-nav {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
 	border-top: 1px solid rgba(0, 0, 0, 0.2) ;
+	padding: 0 ;
 }
 
 /* Posts Style*/
-/*
-ul.posts li {
-    list-style: none;
-}
-*/
 .post-header {
     margin-top: 12px;
 }
+
 
 .post-title {
 	padding-bottom: 1%;

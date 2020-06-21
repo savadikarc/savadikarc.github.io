@@ -1,5 +1,5 @@
 #Site Settings
-title: "Chinmay Savadikar's Blog"
+title: "Chinmay Savadikar"
 baseurl: ""
 url: "https://savadikarc.github.io"
 rants: false
@@ -7,22 +7,15 @@ thumbnail-url: "/assets/thumbnails/"
 
 # Social Media
 social:
-    icons: "original"
     _github: 
-        show: true
         base: "https://github.com/"
         username: savadikarc
     _twitter: 
-        show: true
         base: "https://twitter.com/"
         username: savadikarc
     _linkedin: 
-        show: true
         base: "https://www.linkedin.com/in/"
         username: savadikar-chinmay
-
-# Show / Hide some parts of the website
-show_cv: false
 
 #Build Settings
 markdown: kramdown

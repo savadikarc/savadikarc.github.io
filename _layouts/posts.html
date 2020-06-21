@@ -17,23 +17,27 @@
 		{% endif %}
 		
 	</head>
+
 	<body>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col">
-				
-					<div class="row">
-						<div class="col">
-
-							<ul class="nav custom-nav">
+					
+					<div class="top-bar sticky-top">
+						<nav class="navbar custom-nav">
+							<ul class="nav">
 								<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
 								<li class="nav-item"><a class="nav-link" href="/aboutme">About</a></li>
 								<li class="nav-item"><a class="nav-link" href="/rants">Rants</a></li>
-								{% if site.show_cv %}
-									<li class="nav-item"><a class="nav-link" href="/cv">CV</a></li>
-								{% endif %}
 							</ul>
-
+						</nav>
+						<div class="row">
+							<div class="col post-header">
+								<div class="post-title">
+									<h1>{{ page.title }}</h1>
+									<p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					
@@ -41,31 +45,31 @@
 					
 					<div class="row">
 						
-							<div class="col">
-							
-								<ul class="nav media-list">
-									
-									<li class="nav-item">
-										<a href="{{ site.social._github.username | prepend: site.social._github.base }}" title="Github">
-													<i class="fa fa-github"></i>
-										</a>
-									</li>
-									
-									<li class="nav-item">
-										<a href="{{ site.social._twitter.username | prepend: site.social._twitter.base }}" title="Twitter">
-													<i class="fa fa-twitter"></i>
-										</a>
-									</li>
-									
-									<li class="nav-item">
-										<a href="{{ site.social._linkedin.username | prepend: site.social._linkedin.base }}" title="LinkedIn">
-													<i class="fa fa-linkedin"></i>
-										</a>
-									</li>
+						<div class="col">
+						
+							<ul class="nav media-list">
+								
+								<li class="nav-item">
+									<a href="{{ site.social._github.username | prepend: site.social._github.base }}" title="Github">
+												<i class="fa fa-github"></i>
+									</a>
+								</li>
+								
+								<li class="nav-item">
+									<a href="{{ site.social._twitter.username | prepend: site.social._twitter.base }}" title="Twitter">
+												<i class="fa fa-twitter"></i>
+									</a>
+								</li>
+								
+								<li class="nav-item">
+									<a href="{{ site.social._linkedin.username | prepend: site.social._linkedin.base }}" title="LinkedIn">
+												<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
 
-								</ul>
-							</div>
+							</ul>
 						</div>
+					</div>
 				</div>
 			</div>
 		</div>
