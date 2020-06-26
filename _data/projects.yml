@@ -7,7 +7,7 @@
   repo: https://github.com/savadikarc/ISIC2019
  
 - name: Interpretable Machine Learning in Healthcare
-  description: Implemented gradient based explanation techniques for Deep Learning models for Biomedical Image Classification, withcomparative study on Malaria and Pneumonia classification datasets
+  description: Implemented gradient based explanation techniques for Deep Learning models for Biomedical Image Classification, with comparative study on Malaria and Pneumonia classification datasets
   repo: https://github.com/savadikarc/Semicolons-2019
  
 - name: Skin Lesion Classification using Hierarchical Classifiers
