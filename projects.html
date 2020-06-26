@@ -15,7 +15,9 @@ title: Projects
 						<div class="card-block px-2">
 							<p class="card-title">{{ project.name }}</p>
 							<p class="card-subtitle text-muted">{{ project.description }}</p>
-							<a class="post-link card-text" href="{{ project.repo }}">{{ project.repo }}</a>
+							{% if project.repo %}
+							<a class="post-link card-text" href="{{ project.repo }}">[Code]</a>
+							{% endif %}
 						</div>
 					</div>
 				</div>
