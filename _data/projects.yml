@@ -4,15 +4,15 @@
     
 - name: Generative Models for Skin Lesion Images
   description: Generating Skin Lesion Images using Self-Attention GANs
-  repo: https://github.com/rahulkulhalli/ISIC2019
+  repo: https://github.com/savadikarc/ISIC2019
  
 - name: Interpretable Machine Learning in Healthcare
   description: Implemented gradient based explanation techniques for Deep Learning models for Biomedical Image Classification, withcomparative study on Malaria and Pneumonia classification datasets
-  repo: https://github.com/rahulkulhalli/Semicolons-2019
+  repo: https://github.com/savadikarc/Semicolons-2019
  
 - name: Skin Lesion Classification using Hierarchical Classifiers
   description: Work done towards ISIC 2018 Skin Lesion Analysis Towards Melanoma Detection, an international competition.
-  repo: https://github.com/rahulkulhalli/SkinLegion
+  repo: https://github.com/savadikarc/SkinLegion
   
 - name: Deep Learning Based Music Emotion Recognition
   description: Recognition of emotion in music using stacked Convolutional and Recurrent Neural Networks, and Mel Frequency CepstralCoefficients. Final Year BE project.
