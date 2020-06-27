@@ -15,7 +15,7 @@
   repo: https://github.com/savadikarc/SkinLegion
   
 - name: Deep Learning Based Music Emotion Recognition
-  description: Recognition of emotion in music using stacked Convolutional and Recurrent Neural Networks, and Mel Frequency CepstralCoefficients. Final Year BE project.
+  description: Recognition of emotion in music using stacked Convolutional and Recurrent Neural Networks, and Mel Frequency Cepstral Coefficients. Final Year BE project.
   
 - name: Mini Self–Driving Car
   description: Trained a small robot–car to navigate in a static environment using images captured by a mobile phone on-board.
