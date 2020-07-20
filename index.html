@@ -7,22 +7,31 @@ redirect_from:
 ---
 <div class="row">
 	<div class="col">
-		<div class="content-container">
+	
+		<div class="header sticky-top">
 			<h1>Chinmay Savadikar</h1>
-			<p>I am a Machine Learning Engineer with expertise in Computer Vision. I like to develop robust, end-to-end Computer Vision solutions using both, Deep Learning and traditional Computer Vision algorithms.</p>
+		</div>
+	
+		<div class="content-container" style="border-bottom: 1px solid rgba(0, 0, 0, 0.2)">
+		
+			<div class="bio">
+			
+				<p>I am a Machine Learning Engineer with expertise in Computer Vision. I like to develop robust, end-to-end Computer Vision solutions using both, Deep Learning and traditional Computer Vision algorithms.</p>
 
-			<p>I have extensive experience with problems in Image Recognition, Object Detection, and Semantic Segmentation, and like to work on the full stack of Machine Learning and 
-			Deep Learning pipeline - Data Visualization, Data Annotation, incremental training and fine-tuning of models, and deployment.</p>
-			
-			<p>I graduated from Savitribai Phule Pune University (you may know it as University of Pune) with a Bachelor's degree in Electronics & Telecommunication Engineering. I work as a Software Engineer at Persistent Systems Ltd.</p>
-			
-			<p>On the non-technical side, I enjoy playing Football, listening to Oldies Rock Music, reading an occasional Manga, and watching comedy series. </p>
-			
-			<p>You can contact me at &ltlast-name&gt&ltinitial-of-first-name&gt[at]gmail[dot]com</p>
+				<p>I have extensive experience with problems in Image Recognition, Object Detection, and Semantic Segmentation, and like to work on the full stack of Machine Learning and 
+				Deep Learning pipeline - Data Visualization, Data Annotation, incremental training and fine-tuning of models, and deployment.</p>
+				
+				<p>I graduated from Savitribai Phule Pune University (you may know it as University of Pune) with a Bachelor's degree in Electronics & Telecommunication Engineering. I work as a Software Engineer at Persistent Systems Ltd.</p>
+				
+				<p>On the non-technical side, I enjoy playing Football, listening to Oldies Rock Music, reading an occasional Manga, and watching comedy series. </p>
+				
+				<p>You can contact me at &ltlast-name&gt&ltinitial-of-first-name&gt[at]gmail[dot]com</p>
+			</div>
 			
 		</div>
 		
-		<div class="post-container">
+		<div class="post-container" style="padding-top: 1%">
+				<h4>Recent Blog Posts</h4>
 				{% for post in site.categories.post %}
 				
 					<div class="card-container">
@@ -44,6 +53,8 @@ redirect_from:
 					</div>
 				
 				{% endfor %}
-		</div>
+			</div>
+		
+		
 	</div>
 </div>

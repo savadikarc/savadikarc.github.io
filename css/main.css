@@ -30,13 +30,11 @@ a:hover {
 
 .left-sidebar {
 	text-align: center ;
-	/*background: #F0EAD6 ;*/
 	background: #343A40 ;
 }
 
 .left-sidebar a {
 	color: rgba(255, 255, 255, 0.5) ;
-	/*color: rgb(132, 109, 99) ;*/
 }
 
 .left-sidebar a:hover {
@@ -64,12 +62,10 @@ a:hover {
 	-webkit-border-radius: 50%;
     -moz-border-radius: 50%;
 	border: 5px solid rgba(255, 255, 255, 0.3) ;
-	/*border: 5px solid rgba(132, 109, 99) ;*/
 }
 
 .first-name {
 	color: rgba(255, 255, 255, 0.5);
-	/*color: rgba(132, 109, 99) ;*/
 	font-size: 30px ;
 	margin-top: 5% ;
 }
@@ -77,25 +73,21 @@ a:hover {
 .media-list * {
 	text-align: center;
 	display: inline;
-	/*margin-bottom: 0.5re ;*/
+}
+
+.header {
+	padding-left: 1rem ;
+	margin-top: 11%;
+	background: #ffffff ;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /*Top navigation bar*/
-.nav-container {
-	margin-top: 4% ;
-	margin-bottom: 3% ;
-}
-
 
 .custom-nav {
 	display: inline ;
 	margin: auto ;
 }
-
-/*
-.custom-nav * {
-	text-align: right ;
-}*/
 
 .nav-content {
 	padding: 0 ;
@@ -106,31 +98,21 @@ a:hover {
 /***************************
 Posts
 **************************/
-/*
-.main-content {
-	background: #FFFCF4 ;
-}
-*/
 .content-container {
-	margin-top: 5% ;
+	/*margin-top: 5% ;*/
 	padding-top: 0.5rem;
 	padding-right: 1rem;
-	padding-bottom: 0.5rem;
+	/*padding-bottom: 0.5rem;*/
 	padding-left: 1rem;
 }
-
 .post-container {
-	overflow: scroll;
+	margin-top: 0.5% ;
 	padding-top: 0.5rem;
 	padding-right: 1rem;
 	padding-bottom: 0.5rem;
 	padding-left: 1rem;
 }
 
-/* Hide the ugly scroll-bars*/
-.post-container::-webkit-scrollbar {
-	display: none ;
-}
 
 .card-container {
 	font-family: Monospace ;
@@ -168,16 +150,9 @@ Posts
 	color: #2a7ae2;
 }
 
-.project-container {
-	/*margin-top: 5% ;*/
-	padding-top: 0.5rem;
-	padding-right: 1rem;
-	padding-bottom: 0.5rem;
-	padding-left: 0.5rem;
-}
-
 .project-card {
 	border: none ;
-	/*border-bottom: 1px solid rgba(0, 0, 0, 0.125) ;*/
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125) ;
 	border-radius: 0px ;
+	padding-bottom: 0.05% ;
 }
