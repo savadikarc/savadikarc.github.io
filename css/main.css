@@ -77,7 +77,7 @@ a:hover {
 
 .header {
 	padding-left: 1rem ;
-	margin-top: 11%;
+	margin-top: 7%;
 	background: #ffffff ;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -102,7 +102,7 @@ Posts
 	/*margin-top: 5% ;*/
 	padding-top: 0.5rem;
 	padding-right: 1rem;
-	/*padding-bottom: 0.5rem;*/
+	padding-bottom: 0.5rem;
 	padding-left: 1rem;
 }
 .post-container {
@@ -113,26 +113,23 @@ Posts
 	padding-left: 1rem;
 }
 
-
 .card-container {
-	font-family: Monospace ;
 	margin-top: 2% ;
+	margin-bottom: 2% ;
+}
+
+.card-block {
+	padding-bottom: 0.1% ;
 }
 
 .card-title {
-	font-size: 19px;
 	letter-spacing: 0px;
 	line-height: 1.3em;
 	margin-bottom: -0.09rem ;
 }
 
 .card-subtitle {
-	font-size: 19px ;
 	margin-top: 0px ;
-}
-
-.card-text {
-	font-size: 19px ;
 }
 
 .card-header {
@@ -142,8 +139,9 @@ Posts
 
 .post-card {
 	border: none ;
-	/*border-bottom: 1px solid rgba(0, 0, 0, 0.125) ;*/
 	border-radius: 0px ;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125) ;
+	padding-bottom: 0.1% ;
 }
 
 .post-link {
