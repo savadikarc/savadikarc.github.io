@@ -15,7 +15,7 @@ p {
 /*General hyperlink styling*/
 a {
 	text-decoration: none;
-	color: #727272;
+	color: #0056b3;
 }
 
 a:hover {
@@ -145,7 +145,7 @@ Posts
 }
 
 .post-link {
-	color: #2a7ae2;
+	color: #0056b3;
 }
 
 .project-card {
