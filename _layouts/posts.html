@@ -42,6 +42,11 @@
 										  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="{{ badge.name }}"/>
 										</a>
 									{% endfor %}
+									{% if page.repository %}
+										<a href="{{ page.repository }}" title="Github" style="color: #000000">
+													<i class="fa fa-github"></i>
+										</a>
+									{% endif %}
 								</div>
 								
 							</div>
