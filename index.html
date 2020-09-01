@@ -23,12 +23,12 @@ redirect_from:
 				
 				<p>I graduated from Savitribai Phule Pune University (you may know it as University of Pune) with a Bachelor's degree in Electronics & Telecommunication Engineering. I work as a Software Engineer at Persistent Systems Ltd.</p>
 				
-				<p>On the non-technical side, I like reading fiction and non-fiction (you can take a look at my <a href="https://www.goodreads.com/user/show/57336050-chinmay-savadikar" title="Goodreads">Goodreads profile </a>, if you'd like), 
+				<p>On the non-technical side, I like reading fiction and non-fiction (you can take a look at my <a href="https://www.goodreads.com/user/show/57336050-chinmay-savadikar" title="Goodreads">Goodreads profile </a>, if you'd like to), 
 					  although I took a looong hiatus before resuming the habit. I enjoy playing Football, listening to Oldies Rock Music, and watching an occasional sitcom. </p>
 				
 				<p>You can contact me at &ltlast-name&gt&ltinitial-of-first-name&gt[at]gmail[dot]com, 
 					  on <a href="{{ site.social._twitter.username | prepend: site.social._twitter.base }}" title="Twitter">Twitter</a>, 
-					  or <a href="{{ site.social._linkedin.username | prepend: site.social._linkedin.base }}" title="LinkedIn">LinkedIn</a>.</p>
+					  or on <a href="{{ site.social._linkedin.username | prepend: site.social._linkedin.base }}" title="LinkedIn">LinkedIn</a>.</p>
 			</div>
 			
 		</div>
@@ -39,19 +39,22 @@ redirect_from:
 				
 					<div class="card-container">
 						<div class="card flex-row flex-wrap mt-2 post-card">
-							<div class="card-header border-0">
-								<img class="img-fluid" src="{{ post.thumbnail | prepend: site.thumbnail-url }}" height="80px" width="80px">
-							</div>
-							<div class="card-block px-2">
-								<a class="post-link card-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-								<!--h5 class="card-title">{{ post.title }}</h5-->
-								<p class="card-subtitle mb-1 text-muted">{{ post.date | date: "%b %-d, %Y" }}</p>
-								<p class="card-text">{{ post.tldr }}</p>
-							</div>
+								<div class="col-sm-1 card-header border-0">
+									<img class="img-fluid" src="{{ post.thumbnail | prepend: site.thumbnail-url }}" height="80px" width="80px">
+								</div>
+								<div class="col-sm-6 col-sm-pull">
+									<a class="post-link card-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+									<p class="card-subtitle mb-1 text-muted">{{ post.date | date: "%b %-d, %Y" }}</p>
+									<p class="card-text">{{ post.tldr }}</p>
+								</div>
+								<div class="col-sm-1 col-sm-push">
+									{% for badge in post.badges %}
+										<a href="{{ badge.url }}">
+										  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="{{ badge.name }}"/>
+										</a>
+									{% endfor %}
+								</div>
 							<div class="w-200"></div>
-							<!--div class="card-footer w-100 text-muted">
-								Footer stating cats are CUTE little animals
-							</div-->
 						</div>
 					</div>
 				
