@@ -33,6 +33,11 @@ title: Chinmay's Blog
 									  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="{{ badge.name }}"/>
 									</a>
 								{% endfor %}
+								{% if post.repository %}
+									<a href="{{ post.repository }}" title="Github" style="color: #000000">
+												<i class="fa fa-github"></i>
+									</a>
+									{% endif %}
 							</div>
 							<div class="w-200"></div>
 						</div>
