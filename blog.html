@@ -18,19 +18,23 @@ title: Chinmay's Blog
 				
 					<div class="card-container">
 						<div class="card flex-row flex-wrap mt-2 post-card">
-							<div class="card-header border-0">
+							<div class="col-sm-1 card-header border-0">
 								<img class="img-fluid" src="{{ post.thumbnail | prepend: site.thumbnail-url }}" height="80px" width="80px">
 							</div>
-							<div class="card-block px-2">
+							<div class="col-sm-6 col-sm-pull">
 								<a class="post-link card-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-								<!--h5 class="card-title">{{ post.title }}</h5-->
 								<p class="card-subtitle mb-1 text-muted">{{ post.date | date: "%b %-d, %Y" }}</p>
 								<p class="card-text">{{ post.tldr }}</p>
 							</div>
+							<div class="col-sm-1 col-sm-push">
+								{% for badge in post.badges %}
+									
+									<a href="{{ badge.url }}">
+									  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="{{ badge.name }}"/>
+									</a>
+								{% endfor %}
+							</div>
 							<div class="w-200"></div>
-							<!--div class="card-footer w-100 text-muted">
-								Footer stating cats are CUTE little animals
-							</div-->
 						</div>
 					</div>
 				
