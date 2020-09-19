@@ -2,7 +2,7 @@
 body {
 	font-family: 'Actor' ;
     margin: 60px auto;
-    width: 75%;
+    /* width: 75%; */
 }
 
 /*General hyperlink styling*/
@@ -77,21 +77,15 @@ p {
     line-height: 1.2;
 }
 
-.media-list {
-	
-	margin-bottom: 0.5rem;
-	margin-top: 0.5rem;
-	border-top: 1px solid rgba(0, 0, 0, 0.2) ;
+.homenav * {
+	text-align: center;
+	list-style: none;
 }
 
-.media-list * {
-	text-align: center;
-	display: inline ;	
-}
-.media-list a:hover {
-	cursor: pointer ;
-	color: #0056b3;
-	text-decoration: none ;
+.position-fixed-col {
+	position: sticky ;
+	padding-top: 12px ;
+	top: 0 ;
 }
 
 .icon{
@@ -103,6 +97,5 @@ p {
 
 .icon:hover {
 	opacity: 0.9 ;
-	height: 32px ;
-	width: 32px ;
+	text-decoration: none ;
 }
