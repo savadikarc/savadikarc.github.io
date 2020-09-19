@@ -19,19 +19,61 @@
 	</head>
 
 	<body>
-		<div class="container-fluid">
-			<div class="row">
+		<div class="container-fluid" style="width: 78%">
+			<!-- <div class="row portrait" style="float: left">
 				<div class="col">
+					<img class="img-fluid portrait-picture" src="/assets/self_starry_night.png" height="200px" width="200px">
+				</div>
+			</div> -->
+			<div class="row">
+				<div class="col-1">
+					<div class="position-fixed-col col-1 homenav">
+						<ul >
+							
+							<li class="nav-item">
+								<a href="/" title="Home">
+											<i class="fa fa-home"></i>
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a href="{{ site.social._github.username | prepend: site.social._github.base }}" title="Github">
+											<i class="fa fa-github"></i>
+								</a>
+							</li>
+							
+							<li class="nav-item">
+								<a href="{{ site.social._twitter.username | prepend: site.social._twitter.base }}" title="Twitter">
+											<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							
+							<li class="nav-item">
+								<a href="{{ site.social._linkedin.username | prepend: site.social._linkedin.base }}" title="LinkedIn">
+											<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+							
+							<li class="nav-item">
+								<a href="mailto:savadikarc@gmail.com" title="Email">
+											<i class="fa fa-envelope"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-11">
 					
 					<div class="top-bar sticky-top">
-						<nav class="navbar custom-nav">
+						<!-- <nav class="navbar custom-nav">
 							<ul class="nav">
 								<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
 								<li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
 								<li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
 								<li class="nav-item"><a class="nav-link" href="/cv.pdf">CV</a></li>
 							</ul>
-						</nav>
+						</nav> -->
 						<div class="row">
 							<div class="col post-header">
 								<div class="post-title">
@@ -39,7 +81,7 @@
 									<p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 									{% for badge in page.badges %}
 										<a href="{{ badge.url }}">
-										  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="{{ badge.name }}"/>
+											<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="{{ badge.name }}"/>
 										</a>
 									{% endfor %}
 									{% if page.repository %}
@@ -55,33 +97,6 @@
 					
 					{{ content }}
 					
-					<div class="row">
-						
-						<div class="col">
-						
-							<ul class="nav media-list">
-								
-								<li class="nav-item">
-									<a href="{{ site.social._github.username | prepend: site.social._github.base }}" title="Github">
-												<i class="fa fa-github"></i>
-									</a>
-								</li>
-								
-								<li class="nav-item">
-									<a href="{{ site.social._twitter.username | prepend: site.social._twitter.base }}" title="Twitter">
-												<i class="fa fa-twitter"></i>
-									</a>
-								</li>
-								
-								<li class="nav-item">
-									<a href="{{ site.social._linkedin.username | prepend: site.social._linkedin.base }}" title="LinkedIn">
-												<i class="fa fa-linkedin"></i>
-									</a>
-								</li>
-
-							</ul>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
