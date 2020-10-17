@@ -5,6 +5,10 @@ body {
     /* width: 75%; */
 }
 
+.container-fluid {
+	width: 78%;
+}
+
 /*General hyperlink styling*/
 a {
     text-decoration: none;
@@ -104,6 +108,12 @@ p {
 	}
 	.homenav-small * {
 		display: inline;
+	}
+	.container-fluid {
+		width: 95%;
+	}
+	.navbar-col {
+		padding-left: 0px ;
 	}
 }
 
