@@ -14,6 +14,7 @@ a {
 a:hover {
 	cursor: pointer ;
 	color: #0056b3;
+	text-decoration: none;
 }
 
 
@@ -30,24 +31,22 @@ p {
 .top-bar {
 	background: #FFFFFF ;
 }
-.custom-nav {
+/* .custom-nav {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
 	border-top: 1px solid rgba(0, 0, 0, 0.2) ;
 	padding: 0 ;
-}
+} */
 
 /* Posts Style*/
 .post-header {
     margin-top: 12px;
 }
 
-
 .post-title {
 	padding-bottom: 1%;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
 	padding-left: 1rem;
 }
-
 
 .post-header .meta {
     font-size: 15px;
@@ -72,6 +71,10 @@ p {
 .post a {
     color: #2a7ae2;
 }
+.post a:hover {
+	color: #2a7ae2;
+	text-decoration: underline;
+}
 
 .post p {
     line-height: 1.2;
@@ -80,6 +83,28 @@ p {
 .homenav * {
 	text-align: center;
 	list-style: none;
+}
+
+.homenav-small ul {
+	padding-left: 20px ;
+}
+
+.homenav-small * {
+	text-align: center;
+	list-style: none;
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.homenav {
+		display: none;
+	}
+	.homenav-small {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
+	}
+	.homenav-small * {
+		display: inline;
+	}
 }
 
 .position-fixed-col {
