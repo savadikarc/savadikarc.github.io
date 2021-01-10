@@ -35,11 +35,6 @@ p {
 .top-bar {
 	background: #FFFFFF ;
 }
-/* .custom-nav {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
-	border-top: 1px solid rgba(0, 0, 0, 0.2) ;
-	padding: 0 ;
-} */
 
 /* Posts Style*/
 .post-header {
@@ -133,4 +128,8 @@ p {
 .icon:hover {
 	opacity: 0.9 ;
 	text-decoration: none ;
+}
+
+ul li p {
+	margin-bottom: 0em;
 }
