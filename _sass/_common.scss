@@ -1,0 +1,37 @@
+body {
+	font-family: 'Actor' ;
+}
+
+p {
+    font-size: 23px;
+    line-height: 1;
+    color: #333;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+a {
+	font-size: 25px;
+	text-decoration: none;
+	color: #006bb3;
+}
+
+a:hover {
+	text-decoration: underline;
+	cursor: pointer ;
+	color: #006bb3;
+}

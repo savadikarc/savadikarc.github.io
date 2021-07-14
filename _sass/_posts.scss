@@ -1,34 +1,13 @@
-/*Blog Style*/
 body {
-	font-family: 'Actor' ;
-    margin: 60px auto;
-    /* width: 75%; */
+	margin: 60px auto;
 }
 
 .container-fluid {
 	width: 78%;
 }
 
-/*General hyperlink styling*/
-a {
-    text-decoration: none;
+.social-icon {
     color: #727272;
-}
-
-a:hover {
-	cursor: pointer ;
-	color: #0056b3;
-	text-decoration: none;
-}
-
-
-h1 {
-    font-size: 3em;
-}
-p {
-    font-size: 16px;
-    line-height: 1;
-    color: #333;
 }
 
 /*Top navigation bar*/
@@ -55,7 +34,6 @@ p {
 }
 
 .post-header h1 {
-    font-size: 30px ;
     line-height: 1;
     margin: 0px 0px 0px 0px;
 }
@@ -65,14 +43,6 @@ p {
 	padding-left: 1rem;
 	padding-bottom: 0.5rem;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
-}
-
-.post a {
-    color: #2a7ae2;
-}
-.post a:hover {
-	color: #2a7ae2;
-	text-decoration: underline;
 }
 
 .post p {
@@ -116,18 +86,6 @@ p {
 	position: sticky ;
 	padding-top: 12px ;
 	top: 0 ;
-}
-
-.icon{
-	opacity: 0.5 ;
-	vertical-align: middle ;
-	height: 32px ;
-	width: 32px ;
-}
-
-.icon:hover {
-	opacity: 0.9 ;
-	text-decoration: none ;
 }
 
 ul li p {
