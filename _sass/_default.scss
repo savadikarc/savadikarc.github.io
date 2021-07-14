@@ -1,46 +1,18 @@
-/*Blog Style*/
-body {
-	font-family: 'Actor' ;
-}
-
-h1 {
-	font-size: 2em;
-}
-p {
-	font-size: 20px;
-	line-height: 1;
-	color: #333;
-}
-
-/*General hyperlink styling*/
-a {
-	text-decoration: none;
-	color: #0056b3;
-}
-
-a:hover {
-	text-decoration: underline;
-	cursor: pointer ;
-	color: #0056b3;
-}
-
 .col-wrapper {
 	height: 100vh;
+}
+
+.social-icon, .nav-content {
+    color: rgba(255, 255, 255, 0.5) ;
+}
+
+.social-icon:hover {
+    text-decoration: none;
 }
 
 .left-sidebar {
 	text-align: center ;
 	background: #343A40 ;
-}
-
-.left-sidebar a {
-	color: rgba(255, 255, 255, 0.5) ;
-}
-
-.left-sidebar a:hover {
-	text-decoration: none;
-	cursor: pointer ;
-	color: #0056b3;
 }
 
 .position-fixed-col {
