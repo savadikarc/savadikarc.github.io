@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/default.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+	</head>
+	
+	<body>
+		
+		<div class="container-fluid">
+		
+			<div class="row col-wrapper">
+				
+				<div class="row" style="width: 100%;">
+					<div class="col"><h1 class="name">Chinmay Savadikar</h1></div>
+				</div>
+
+				<div class="row" style="width: 100%;">
+					<div class="col-sm-4 col-sm-pull-4" style="width: auto; max-width: 40%;">
+						<img class="img-fluid portrait-picture" src="/assets/self_starry_night.png">
+					</div>
+					<div class="col-sm-8 col-sm-push-8">
+						<div class="row">
+							<h2>Chinmay Savadikar</h2>
+						</div>
+						<div class="row">
+							<p>Master of Science - Electrical Engineering</p>
+						</div>
+						<div class="row">
+							<p>North Carolina State University</p>
+						</div>
+
+						<div class="row">
+							<div class="media-list">
+								<ul class="nav">
+								
+									<li class="nav-item">
+										<a class="social-icon" href="{{ site.social._github.username | prepend: site.social._github.base }}" title="Github">
+													<i class="fa fa-github"></i>
+										</a>
+									</li>
+									
+									<li class="nav-item">
+										<a class="social-icon" href="{{ site.social._twitter.username | prepend: site.social._twitter.base }}" title="Twitter">
+													<i class="fa fa-twitter"></i>
+										</a>
+									</li>
+									
+									<li class="nav-item">
+										<a class="social-icon" href="{{ site.social._linkedin.username | prepend: site.social._linkedin.base }}" title="LinkedIn">
+													<i class="fa fa-linkedin"></i>
+										</a>
+									</li>
+									
+									<li class="nav-item">
+										<a class="social-icon" href="mailto:savadikarc@gmail.com" title="Email">
+													<i class="fa fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row">
+				
+					<div class="col-sm-12 col-sm-push-12 main-content">
+						
+							{{ content }}
+
+					</div>
+				</div>
+			
+			</div>	
+			
+		</div>
+		
+	</body>
+
+</html>
