@@ -1,29 +1,24 @@
 ---
-layout: about
+layout: home
 title: Projects
----
-<div class="row">
-	<div class="col">
-		
-		<div class="header sticky-top">
-			<h1>Projects</h1>
-		</div>
-		
-      <div class="content-container">
+---		
+<div class="header sticky-top">
+    <h1>Projects</h1>
+</div>
+
+    <div class="content-container">
         {% for project in site.data.projects %}
-          <div class="card-container">
-            <div class="card flex-row flex-wrap mt-2 project-card">
-              <div class="card-block">
-                <p class="card-title">{{ project.name }}</p>
-                <p class="card-subtitle text-muted">{{ project.description }}</p>
-                {% if project.repo %}
-                <a class="post-link card-text" href="{{ project.repo }}"><i class="fa fa-github"></i></a>
-                {% endif %}
-              </div>
+            <div class="card-container">
+                <div class="card flex-row flex-wrap mt-2 project-card">
+                    <div class="card-block project-card-block">
+                        <p class="card-title project-card-title">{{ project.name }}</p>
+                        <p class="card-subtitle text-muted project-card-subtitle">{{ project.description }}</p>
+                        {% if project.repo %}
+                            <a href="{{ project.repo }}"><i class="fa fa-github"></i></a>
+                        {% endif %}
+                    </div>
+                </div>
             </div>
-          </div>
         {% endfor %}
-      </div>
-		</div>
-	</div>
+    </div>
 </div>

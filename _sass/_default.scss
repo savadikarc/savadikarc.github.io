@@ -15,6 +15,10 @@
 	background: #343A40 ;
 }
 
+.left-sidebar p {
+	color: rgba(255, 255, 255, 0.3);
+}
+
 .position-fixed-col {
 	position: fixed !important ;
 	margin: auto ;
@@ -33,12 +37,11 @@
 	border-radius: 50% ;
 	-webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-	border: 5px solid rgba(255, 255, 255, 0.3) ;
+	// border: 5px solid rgba(255, 255, 255, 0.3) ;
 }
 
-.first-name {
+.name {
 	color: rgba(255, 255, 255, 0.5);
-	font-size: 30px ;
 	margin-top: 5% ;
 }
 
@@ -85,6 +88,7 @@ Posts
 	padding-right: 1rem;
 	padding-bottom: 0.5rem;
 	padding-left: 1rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .post-container {
 	margin-top: 0.5% ;
@@ -99,25 +103,6 @@ Posts
 	margin-bottom: 2% ;
 }
 
-.card-block {
-	padding-bottom: 0.1% ;
-}
-
-.card-title {
-	letter-spacing: 0px;
-	line-height: 1.3em;
-	margin-bottom: -0.09rem ;
-}
-
-.card-subtitle {
-	margin-top: 0px ;
-}
-
-.card-header {
-	background: none ;
-	padding: 0px 0px 0px 0px ;
-}
-
 .post-card {
 	border: none ;
 	border-radius: 0px ;
@@ -129,9 +114,6 @@ Posts
 	color: #0056b3;
 }
 
-.project-card {
-	border: none ;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.125) ;
-	border-radius: 0px ;
-	padding-bottom: 0.05% ;
+.info-card {
+	border: none;
 }
