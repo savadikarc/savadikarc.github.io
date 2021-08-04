@@ -1,13 +1,17 @@
+- name: Brain Tumor Segmentation using Probabilitic U-Net
+  description: Segment brain tumors for BRATS 2020 challenge.
+  repo: https://github.com/savadikarc/BRATS2020
+
 - name: iWildCam 2020 - FGVC7 (Kaggle)
   description: Categorize animals in the camera-trap images. Ranked 14th (top 12%) out of 126 teams.
   repo: https://github.com/savadikarc/iWildCam2020
     
 - name: Generative Models for Skin Lesion Images
-  description: Generating Skin Lesion Images using Self-Attention GANs
+  description: Generating Skin Lesion Images using Self-Attention GANs.
   repo: https://github.com/savadikarc/ISIC2019
  
 - name: Interpretable Machine Learning in Healthcare
-  description: Implemented gradient based explanation techniques for Deep Learning models for Biomedical Image Classification, with comparative study on Malaria and Pneumonia classification datasets
+  description: Implemented gradient based explanation techniques for Deep Learning models for Biomedical Image Classification, with comparative study on Malaria and Pneumonia classification datasets.
   repo: https://github.com/savadikarc/Semicolons-2019
  
 - name: Skin Lesion Classification using Hierarchical Classifiers

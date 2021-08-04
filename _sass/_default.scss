@@ -3,7 +3,7 @@
 }
 
 .social-icon, .nav-content {
-    color: rgba(255, 255, 255, 0.5) ;
+    color: rgba(255, 255, 255, 0.5)
 }
 
 .social-icon:hover {
@@ -62,7 +62,7 @@
 .header {
 	padding-left: 1rem ;
 	margin-top: 7%;
-	background: #ffffff ;
+	// background: #ffffff ;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -79,17 +79,21 @@
 	margin-bottom: 0.5rm ;
 }
 
-/***************************
-Posts
-**************************/
 .content-container {
-	/*margin-top: 5% ;*/
 	padding-top: 0.5rem;
 	padding-right: 1rem;
 	padding-bottom: 0.5rem;
 	padding-left: 1rem;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+.popout-container {
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 .post-container {
 	margin-top: 0.5% ;
 	padding-top: 0.5rem;
@@ -115,5 +119,16 @@ Posts
 }
 
 .info-card {
+	padding-left: 0.5rem;
 	border: none;
+}
+
+.info-card-subtitle {
+	padding-top: 5px;
+}
+
+.info-card-email {
+	padding-bottom: 5px;
+	padding-top: 10px;
+	font-family: Courier;
 }
