@@ -6,13 +6,21 @@ title: Projects
     <h1>Projects</h1>
 </div>
 
+<div class="popout-container">
+    <div class="card flex-row flex-wrap mt-2 info-card bg-highlight">
+        <div class="card-block">
+            <p class="card-title info-card-subtitle" style="padding-bottom: 5px;">Personal Projects</p>
+        </div>
+    </div>
+</div>
+
 <div class="content-container">
     {% for project in site.data.projects %}
         <div class="card-container">
-            <div class="card flex-row flex-wrap mt-2 project-card">
+            <div class="card flex-row flex-wrap mt-2 info-card bg-foreground">
                 <div class="card-block project-card-block">
-                    <p class="card-title project-card-title">{{ project.name }}</p>
-                    <p class="card-subtitle text-muted project-card-subtitle">{{ project.description }}</p>
+                    <p class="card-title info-card-subtitle text-green">{{ project.name }}</p>
+                    <p class="card-subtitle text-muted info-card-subtitle">{{ project.description }}</p>
                     {% if project.repo %}
                         <a href="{{ project.repo }}"><i class="fa fa-github"></i></a>
                     {% endif %}
