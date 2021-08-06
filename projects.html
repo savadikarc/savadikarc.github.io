@@ -14,15 +14,15 @@ title: Projects
     </div>
 </div>
 
-<div class="content-container">
+<div class="card-content-container">
     {% for project in site.data.projects %}
         <div class="card-container">
             <div class="card flex-row flex-wrap mt-2 info-card bg-foreground">
                 <div class="card-block project-card-block">
-                    <p class="card-title info-card-subtitle text-green">{{ project.name }}</p>
+                    <p class="card-title info-card-subtitle text-foreground">{{ project.name }}</p>
                     <p class="card-subtitle text-muted info-card-subtitle">{{ project.description }}</p>
                     {% if project.repo %}
-                        <a href="{{ project.repo }}"><i class="fa fa-github"></i></a>
+                        <a class="text-black" href="{{ project.repo }}"><i class="fa fa-github"></i></a>
                     {% endif %}
                 </div>
             </div>
