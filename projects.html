@@ -20,9 +20,9 @@ title: Projects
             <div class="card flex-row flex-wrap mt-2 info-card bg-foreground">
                 <div class="card-block project-card-block">
                     <p class="card-title info-card-subtitle text-foreground">{{ project.name }}</p>
-                    <p class="card-subtitle text-muted info-card-subtitle">{{ project.description }}</p>
+                    <p class="card-subtitle info-card-subtitle">{{ project.description }}</p>
                     {% if project.repo %}
-                        <a class="text-black" href="{{ project.repo }}"><i class="fa fa-github"></i></a>
+                        <a href="{{ project.repo }}">{{ project.repo }}</a>
                     {% endif %}
                 </div>
             </div>
