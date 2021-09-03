@@ -1,0 +1,33 @@
+---
+layout: home
+title: Projects
+---		
+<div class="header sticky-top bg-white">
+    <h1>Publications</h1>
+</div>
+
+<!-- <div class="popout-container">
+    <div class="card flex-row flex-wrap mt-2 info-card bg-highlight">
+        <div class="card-block">
+            <p class="card-title info-card-subtitle" style="padding-bottom: 5px;">Personal Projects</p>
+        </div>
+    </div>
+</div> -->
+
+<div class="card-content-container">
+    {% for publication in site.data.publications %}
+        <div class="card-container">
+            <div class="card flex-row flex-wrap mt-2 info-card bg-foreground">
+                <div class="card-block project-card-block">
+                    <p class="card-title info-card-subtitle text-foreground">{{ publication.name }}</p>
+                    <p class="card-subtitle text-muted info-card-subtitle">{{ publication.authors }}</p>
+                    <p class="card-subtitle info-card-subtitle">{{ publication.venue }}</p>
+                    <p class="card-subtitle info-card-subtitle">DOI: <a href="{{ publication.doi }}">{{ publication.doi }}</a></p>
+                    {% if publication.repo %}
+                        <a class="text-black" href="{{ project.repo }}"><i class="fa fa-github"></i></a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
