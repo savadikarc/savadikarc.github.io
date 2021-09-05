@@ -9,6 +9,24 @@ title: Projects
 <div class="popout-container">
     <div class="card flex-row flex-wrap mt-2 info-card bg-highlight">
         <div class="card-block">
+            <p class="card-title info-card-subtitle" style="padding-bottom: 5px;">Corporate Projects</p>
+        </div>
+    </div>
+</div>
+
+<div class="card-content-container">
+    <div class="card-container">
+        <div class="card flex-row flex-wrap mt-2 info-card bg-foreground">
+            <div class="card-block project-card-block">
+                <p class="card-title info-card-subtitle text-foreground">At Persistent Systems, I worked on building Deep Learning platforms for Tumor Cell detection and automated recognition of documents. I trained robust segmentation and classification models and helped set up MLOps frameworks for versioning and deploying models. I also authored Python SDKs for stardardized model training and evaluation which facilitated the colaboration among the Data Sciensts and ML Engineers.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popout-container">
+    <div class="card flex-row flex-wrap mt-2 info-card bg-highlight">
+        <div class="card-block">
             <p class="card-title info-card-subtitle" style="padding-bottom: 5px;">Personal Projects</p>
         </div>
     </div>
@@ -20,9 +38,9 @@ title: Projects
             <div class="card flex-row flex-wrap mt-2 info-card bg-foreground">
                 <div class="card-block project-card-block">
                     <p class="card-title info-card-subtitle text-foreground">{{ project.name }}</p>
-                    <p class="card-subtitle info-card-subtitle">{{ project.description }}</p>
+                    <p class="card-subtitle info-card-subtitle text-medium">{{ project.description }}</p>
                     {% if project.repo %}
-                        <a href="{{ project.repo }}">{{ project.repo }}</a>
+                        <a class=" text-medium" href="{{ project.repo }}">{{ project.repo }}</a>
                     {% endif %}
                 </div>
             </div>
