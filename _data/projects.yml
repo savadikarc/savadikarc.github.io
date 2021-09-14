@@ -15,7 +15,7 @@
   repo: https://github.com/savadikarc/Semicolons-2019
  
 - name: Skin Lesion Classification using Hierarchical Classifiers
-  description: Work done towards ISIC 2018 Skin Lesion Analysis Towards Melanoma Detection, an international competition.
+  description: "Work done towards ISIC 2018 Skin Lesion Analysis Towards Melanoma Detection, an international competition. Bitter lesson: ensemble of end-to-end models almost always works better."
   repo: https://github.com/savadikarc/SkinLegion
   
 - name: Deep Learning Based Music Emotion Recognition
