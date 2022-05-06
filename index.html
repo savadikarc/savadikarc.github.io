@@ -27,14 +27,11 @@ redirect_from:
 
 	<div class="bio">
 	
-		<p>I am a Master's student at North Carolina State University, specializing in Machine Learning and Computer Vision.</p>
+		<p>I am a Master's student at North Carolina State University. I am broadly interested in Computer Vision and Machine Learning.</p>
 
-		<p>Prior to joining NC State, I worked as a Machine Learning Engineer at Persistent Systems. I worked on training Deep Learning models, developing SDKs for the Data Science team, and setting up MLOps frameworks.</p>
+		<p>Prior to joining NC State, I worked as a Machine Learning Engineer at Persistent Systems, where I worked on Deep Learning for Medical Imaging. I also spent some time developing internal SDKs for the Data Science team, and setting up MLOps frameworks.</p>
 		
-		<p>I have worked on problems in Image Recognition, Object Detection, and Semantic Segmentation, and like to work on the full stack of Machine Learning and 
-		Deep Learning pipeline - Data Visualization, Data Annotation, incremental training and fine-tuning of models, and deployment.</p>
-		
-		<p>I graduated from Savitribai Phule Pune University (you may know it as University of Pune) with a Bachelor's degree in Electronics & Telecommunication Engineering, where I split my time between the Robotics and the Football (Soccer) teams.</p>
+		<p>I graduated from University of Pune with a Bachelor's degree in Electronics & Telecommunication Engineering, where I split my time between the Robotics and the Football (I refuse to call it Soccer) teams.</p>
 		
 		<p>I like <a href="https://www.goodreads.com/user/show/57336050-chinmay-savadikar" title="Goodreads">reading</a> fiction and non-fiction. I also enjoy playing Football, listening to Oldies Rock Music, and watching an occasional sitcom. </p>
 		
@@ -45,23 +42,13 @@ redirect_from:
 	
 </div>
 
-<!-- <div class="popout-container">
-    <div class="card flex-row flex-wrap mt-2 info-card bg-highlight">
-        <div class="card-block">
-            <p class="card-title info-card-subtitle" style="padding-bottom: 5px;">Bio</p>
-        </div>
-    </div>
-</div> -->
-
 <!-- <div class="content-container">
-	<div class="bio">
-		
-		<p>2021: Master's student at NC State University</p>
-
-		<p>2018-2021: Machine Learning Engineer at Persistent Systems</p>
-		
-		<p>2014-2018: Undergraduate Student, University of Pune</p>
-		
-	</div>
-
+	News
+	<p>
+		{% for news in site.data.news %}
+			<div>
+				<span>{{ news.date }}: </span><span>{{ news.description}}</span>
+			</div>
+		{% endfor %}
+	</p>
 </div> -->

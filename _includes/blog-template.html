@@ -1,9 +1,9 @@
-<div class="card flex-row flex-wrap mt-2 post-card">
-    <div class="col-sm-1 card-header border-0">
-        <img class="img-fluid" src="{{ post.thumbnail | prepend: site.thumbnail-url }}" height="80px" width="80px">
+<div class="card flex-row flex-wrap mt-2 info-card bg-foreground">
+    <div class="col-sm-1 card-header border-0 d-none d-lg-block">
+        <img class="blog-thumbnail img-fluid" src="{{ post.thumbnail | prepend: site.thumbnail-url }}" height="100px" width="100px">
     </div>
     <div class="col-sm-6 col-sm-pull">
-        <a class="post-link card-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a class="text-foreground post-link card-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <p class="card-subtitle mb-1 text-muted">{{ post.date | date: "%b %-d, %Y" }}</p>
         <p class="card-text">{{ post.tldr }}</p>
     </div>

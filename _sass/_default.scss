@@ -120,8 +120,12 @@
 	padding-bottom: 0.1% ;
 }
 
-.post-link {
+.post-link:hover {
 	color: #0056b3;
+}
+
+.blog-thumbnail {
+	height: 100%;
 }
 
 .info-card {
@@ -139,3 +143,11 @@
 	padding-top: 10px;
 	font-family: Courier;
 }
+
+// .news-container {
+// 	display: flex;
+// }
+
+// .news-date, .news-description {
+// 	flex: 1;
+// }
