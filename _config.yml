@@ -6,13 +6,13 @@ thumbnail-url: "/assets/thumbnails/"
 
 # Social Media
 social:
-    _github: 
+    github: 
         base: "https://github.com/"
         username: savadikarc
-    _twitter: 
+    twitter: 
         base: "https://twitter.com/"
         username: savadikarc
-    _linkedin: 
+    linkedin: 
         base: "https://www.linkedin.com/in/"
         username: savadikar-chinmay
 

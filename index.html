@@ -5,8 +5,8 @@ redirect_from:
     - /aboutme
     - /aboutme/
 ---	
-<div class="header sticky-top bg-white">
-	<h1>Chinmay Savadikar</h1>
+<div class="header bg-white">
+	<h1>About Me</h1>
 </div>
 
 <div class="popout-container">
@@ -27,7 +27,7 @@ redirect_from:
 
 	<div class="bio">
 	
-		<p>I am a Master's student at North Carolina State University. I am broadly interested in Computer Vision and Machine Learning, more specifically in robust visual models.</p>
+		<p>I am a Master's student at North Carolina State University. I am interested in Computer Vision and Machine Learning, more specifically in robust and efficient visual learning.</p>
 
 		<p>I am also interested in applied research and software engineering, and work with the <a href="https://precisionsustainableag.org/">Precision Sustainable Agriculture</a> initiative at NC State to build Computer Vision and Software solutions for problems in agriculture.</p>
 
@@ -42,4 +42,16 @@ redirect_from:
 				or on <a href="{{ site.social._linkedin.username | prepend: site.social._linkedin.base }}" title="LinkedIn">LinkedIn</a>.</p>
 	</div>
 	
+</div>
+
+<div class="title bg-white">
+	<h1>News</h1>
+</div>
+
+<div class="content-container">
+	{% for news in site.data.news %}
+		<div class="news">
+			<span class="badge badge-secondary">{{ news.date }}</span><p>{{ news.description}}</p>
+		</div>
+	{% endfor %}
 </div>

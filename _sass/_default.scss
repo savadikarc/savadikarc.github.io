@@ -66,6 +66,26 @@
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.title {
+	padding-left: 1rem ;
+	margin-top: 1%;
+	// background: #ffffff ;
+	// border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.title h1 {
+	margin-bottom: 0rem;
+}
+
+.news {
+	margin-bottom: 0.5rem;
+}
+
+.news p {
+	display: inline;
+	margin-left: 0.3rem;
+}
+
 /*Top navigation bar*/
 
 .custom-nav {
