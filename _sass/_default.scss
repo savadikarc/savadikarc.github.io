@@ -78,12 +78,24 @@
 }
 
 .news {
-	margin-bottom: 0.5rem;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+	margin-right: 0.8rem;
+	margin-left: 0.5rem;
 }
 
 .news p {
 	display: inline;
 	margin-left: 0.3rem;
+	font-size: 15px;
+}
+
+.news-title {
+	margin-left: 0.5rem;
+}
+
+.news a {
+	font-size: 15px ;
 }
 
 /*Top navigation bar*/
@@ -163,6 +175,8 @@
 	padding-top: 10px;
 	font-family: Courier;
 }
+
+
 
 // .news-container {
 // 	display: flex;
