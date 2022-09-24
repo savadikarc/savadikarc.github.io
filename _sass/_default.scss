@@ -92,6 +92,7 @@
 
 .news-title {
 	margin-left: 0.5rem;
+	width: 100%;
 }
 
 .news a {
@@ -113,10 +114,19 @@
 
 .content-container {
 	padding-top: 0.5rem;
-	padding-right: 1rem;
+	// padding-right: 0.5rem;
 	padding-bottom: 0.5rem;
-	padding-left: 1rem;
+	padding-left: 0.5rem;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	margin-left: 0.01rem;
+	margin-right: 0.01rem;
+}
+
+.bio {
+    padding-left: 0.5rem;
+}
+.hlight {
+	padding-right: 0.5rem;
 }
 
 .card-content-container {
