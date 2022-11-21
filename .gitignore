@@ -1,3 +1,5 @@
 _site/
 content/
 *.ipynb_checkpoints/
+
+.DS_Store
