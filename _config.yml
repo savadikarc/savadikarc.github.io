@@ -15,6 +15,9 @@ social:
     linkedin: 
         base: "https://www.linkedin.com/in/"
         username: savadikar-chinmay
+    mastodon: 
+        base: "https://sigmoid.social/"
+        username: "@savadikarc"
 
 sass:
     style: compact
