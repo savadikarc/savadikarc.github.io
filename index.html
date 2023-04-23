@@ -5,27 +5,30 @@ redirect_from:
     - /aboutme
     - /aboutme/
 ---	
-<div class="header bg-white">
-	<h1>About Me</h1>
-</div>
 
-<div class="popout-container">
-	<div class="card flex-row flex-wrap mt-2 info-card bg-foreground border-highlight">
-		<div class="card-block">
-			<p class="card-subtitle info-card-subtitle text-muted">Ph.D. Student, <a href="https://ece.ncsu.edu/">Department of ECE</a></p>
-			<p class="card-subtitle info-card-subtitle text-muted">North Carolina State University</p>
-			<p class="card-subtitle info-card-email">csavadi [at] ncsu [dot] edu</p>
-		</div>
+<div class="row content-container header">
+	<div class="col popout-container rounded decorate-purple">
+			<p class="card-subtitle mt-2"><b>Chinmay Savadikar</b></p>
+			<p class="card-subtitle mt-1">Ph.D. Student, <a href="https://ece.ncsu.edu/">Department of ECE</a></p>
+			<p class="card-subtitle mt-1">North Carolina State University</p>
+			<p class="card-subtitle info-card-email mt-1">csavadi [at] ncsu [dot] edu</p>
+			<ul class="list-inline links mt-1">
+				<li class="list-inline-item"><a href="#about">About</a></li>
+				<li class="list-inline-item"><a href="#publications">Publications</a></li>
+				<li class="list-inline-item"><a href="#https://scholar.google.com/citations?hl=en&user=0SpINWEAAAAJ">Google Scholar</a></li>
+				<li class="list-inline-item"><a href="/cv.pdf">CV</a></li>
+			</ul>
 	</div>
 </div>
 
-<!-- <div class="content-container">
-	
-</div> -->
+<div class="title bg-white" id="about">
+	<h1>About</h1>
+</div>
 
-<div class="row content-container">
+<div class="row content-container border-bottom">
 
-	<div class="col-sm-8 col-sm-pull8 col-md-8 col-md-pull8 bio" align="justify">
+	<!-- <div class="col-sm-8 col-sm-pull8 col-md-8 col-md-pull8 bio" align="justify"> -->
+	<div class="col-xs-8 col-md-8 bio" align="justify">
 	
 		<p>I am a first year Ph.D. student at North Carolina State University advised by <a href="https://ece.ncsu.edu/people/twu19/">Dr. Tianfu Wu</a>. My research interest lies in Continual Learning, with broader interest in efficient and robust learning for visual tasks.</p>
 
@@ -37,27 +40,59 @@ redirect_from:
 		
 	</div>
 
-	<div class="col-sm-4 col-sm-push-4 col-md-4 col-md-push-4 hlight">
-		<div class="card flex-row flex-wrap info-card bg-news border-news">
+	<!-- <div class="col-sm-4 col-sm-push-4 col-md-4 col-md-push-4"> -->
+	<div class="col-md-4">
+		<div class="card rounded decorate-blue margin-right-zero">
 
 			<div class="news-title"><h3>News</h3></div>
+			<div class="news" align="justify">
+				<span class="badge badge-secondary">Mar 2023</span><p>New preprint - <b>Learning to Grow Artificial Hippocampi in Vision Transformers for Resilient Lifelong Learning</b> available in ArXiv!
+					<br><b>Link</b>: <a href="https://arxiv.org/abs/2303.08250">https://arxiv.org/abs/2303.08250</a>.</p>
+			</div>
 			<div class="news" align="justify">
 				<span class="badge badge-secondary">Aug 2022</span><p>Started as a Ph.D. student as a part of <a href="https://research.ece.ncsu.edu/ivmcl/">Laboratory for interpretable Visual Modeling, Computing and Learning (iVMCL)</a>.</p>
 			</div>
 			<div class="news" align="justify">
-				<span class="badge badge-secondary">May 2022</span><p>Joined <a href="https://research.ece.ncsu.edu/ivmcl/">Laboratory for interpretable Visual Modeling, Computing and Learning (iVMCL)</a> as a Graduate Research Assistant</p>
+				<span class="badge badge-secondary">May 2022</span><p>Joined <a href="https://research.ece.ncsu.edu/ivmcl/">Laboratory for interpretable Visual Modeling, Computing and Learning (iVMCL)</a> as a Research Assistant</p>
 			</div>
 			<div class="news" align="justify">
 				<span class="badge badge-secondary">Dec 2021</span><p>Joined <a href="https://precisionsustainableag.org/">Precision Sustainable Agriculture</a> initiative as a Graduate Student Researcher</p>
 			</div>
 			<div class="news" align="justify">
-				<span class="badge badge-secondary">Oct 2021</span><p>Won the <a href="https://cals.ncsu.edu/agricultural-institute/event/nc-state-usda-hackathon/">NC State-USDA Hackathon</a> by building accurate Deep Learning models for classifying weeds. Press Release: <a href="https://cals.ncsu.edu/crop-and-soil-sciences/news/plant-breeding-ai-gets-schooled-in-new-student-competition/">https://cals.ncsu.edu/crop-and-soil-sciences/news/plant-breeding-ai-gets-schooled-in-new-student-competition/</a></p>
-			</div>
-			<div class="news" align="justify">
-				<span class="badge badge-secondary">Aug 2021</span><p>Started as an MS student at NC State ECE.</p>
+				<span class="badge badge-secondary">Oct 2021</span><p>Won the <a href="https://cals.ncsu.edu/agricultural-institute/event/nc-state-usda-hackathon/">NC State-USDA Hackathon</a> by building accurate Deep Learning models for classifying weeds.
+					<br><a href="https://cals.ncsu.edu/crop-and-soil-sciences/news/plant-breeding-ai-gets-schooled-in-new-student-competition/"><b>Press Release</b></a></p>
 			</div>
 		</div>
 		
 	</div>
 	
+</div>
+
+<div class="title sticky-top bg-white" id="publications">
+	<h1>Publications</h1>
+</div>
+
+<div class="row content-container border-bottom">
+	<div class="row popout-container rounded justify-content-center decorate-yellow align-items-center">
+		<div class="col-xs-4 col-md-4">
+			<img class="pub-thumbnail mt-1 mb-1" src="assets/images/artihippo.jpg">
+		</div>
+		<div class="col-md-8 align-items-center">
+			<a href="https://arxiv.org/abs/2303.08250" class="links">Learning to Grow Artificial Hippocampi in Vision Transformers for Resilient Lifelong Learning</a>
+			<br/><venue>ArXiv Preprint</venue>
+			<br>
+			<b>Chinmay Savadikar</b>,
+			Michelle Dai,
+			<a href="https://ece.ncsu.edu/people/twu19/">Tianfu Wu</a>
+			<br>
+			<a href="https://arxiv.org/pdf/2303.08250.pdf" class="badge badge-secondary badge-sm text-decoration-none mb-1">PDF</a>
+
+			<p>
+				We present a method to grow Artificial Hipoccampi (ArtiHippo) in Vision Transformers for resilient lifelong learning.
+				We show that the final linear projection layer in the multi-head self-attention (MHSA) block can be used as a light-weight module to realize ArtiHippo using a Mixture of Experts framework.
+				We maintain the ArtiHippo using a SPOS Neural Architecture Search and propose a task-similarity oriented sampling strategy to replace the uniform sampling in SPOS which improves the performance over uniform sampling.
+				We test the proposed method on the challenging Visual Domain Decathlon benchmark and obtain strong empirical performance.
+			</p>
+		</div>
+	</div>
 </div>
