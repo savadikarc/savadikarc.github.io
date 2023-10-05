@@ -15,7 +15,6 @@ redirect_from:
 			<ul class="list-inline links mt-1">
 				<li class="list-inline-item"><a href="#about">About</a></li>
 				<li class="list-inline-item"><a href="#publications">Publications</a></li>
-				<li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=en&user=0SpINWEAAAAJ">Google Scholar</a></li>
 				<li class="list-inline-item"><a href="/cv.pdf">CV</a></li>
 			</ul>
 	</div>
@@ -78,7 +77,7 @@ redirect_from:
 			<img class="pub-thumbnail mt-1 mb-1" src="assets/images/artihippo.jpg">
 		</div>
 		<div class="col-md-8 align-items-center">
-			<a href="https://arxiv.org/abs/2303.08250" class="links">Learning to Grow Artificial Hippocampi in Vision Transformers for Resilient Lifelong Learning</a>
+			<a href="https://arxiv.org/abs/2303.08250" class="links">Transforming Transformers for Resilient Lifelong Learning</a>
 			<br/><venue>ArXiv Preprint</venue>
 			<br>
 			<b>Chinmay Savadikar</b>,
@@ -88,10 +87,11 @@ redirect_from:
 			<a href="https://arxiv.org/pdf/2303.08250.pdf" class="badge badge-secondary badge-sm text-decoration-none mb-1">PDF</a>
 
 			<p>
-				We present a method to grow Artificial Hipoccampi (ArtiHippo) in Vision Transformers for resilient lifelong learning.
-				We show that the final linear projection layer in the multi-head self-attention (MHSA) block can be used as a light-weight module to realize ArtiHippo using a Mixture of Experts framework.
-				We maintain the ArtiHippo using a SPOS Neural Architecture Search and propose a task-similarity oriented sampling strategy to replace the uniform sampling in SPOS which improves the performance over uniform sampling.
-				We test the proposed method on the challenging Visual Domain Decathlon benchmark and obtain strong empirical performance.
+				We present a method to add lightweight, learnable parameters to Vision Transformers while leveraging parameter-heavy, but stable components.
+				We show that the final linear projection layer in the multi-head self-attention (MHSA) block can be used as this light-weight module using a Mixture of Experts framework.
+				While most of the prior methods which address this problem induce learnable parameters at every layer, or heuristically choose where to do so, we use Neural Architecture Search to determine this automatically.
+				We use SPOS Neural Architecture Search and propose a task-similarity oriented sampling strategy to replace the uniform sampling and achieve better performance and efficiency than uniform sampling.
+				We test the proposed method on the challenging Visual Domain Decathlon benchmark and obtain strong empirical performance, and show that our proposed method is complementary to prompt based approaches.
 			</p>
 		</div>
 	</div>
