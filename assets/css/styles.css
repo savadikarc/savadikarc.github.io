@@ -1,5 +1,5 @@
 .header {
-    margin-top: 2.0em ;
+    margin-top: 1.0em ;
 }
 
 .portrait {
@@ -25,11 +25,6 @@
 	padding-top: 10px;
 	font-family: Courier;
 }
-
-/* .links * {
-	text-decoration: underline ;
-	font-weight: bold ;
-} */
 
 .link {
 	margin-bottom: 0.5rem;
@@ -66,7 +61,7 @@
 }
 
 .pad-left {
-    padding-left: 1.5em ;
+    padding-left: 2.5em ;
 }
 
 .pad-right {
@@ -212,11 +207,21 @@ h4 {
     max-width: 80% ;
 }
 
+.paper-thumbnail {
+    padding-left: 8px ;
+    padding-right: 8px ;
+}
+
 .pub-thumbnail {
     max-width: 100%;
     height: auto;
     border: 2px solid;
     border-radius: 10px;
+}
+
+.paper-description {
+    padding-left: 15px ;
+    padding-right: 15px ;
 }
 
 .inner-container {
