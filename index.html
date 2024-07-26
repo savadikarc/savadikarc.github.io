@@ -21,66 +21,12 @@ title: Chinmay Savadikar
   <!-- Main container -->
   <div class="container">
 
-    <div class="row decorate-gray header justify-content-center margin-left margin-right">
-      <div class="col-md-4 text-center pad">
-        <img src="/assets/portrait.png" alt="Portrait" class="portrait img-fluid rounded-circle">
-        <h2>Chinmay Savadikar</h2>
-        <p class="card-subtitle info-card-subtitle">Ph.D. Student, <a href="https://ece.ncsu.edu/">Department of ECE</a></p>
-        <p class="card-subtitle info-card-subtitle">North Carolina State University</p>
-        <p class="card-subtitle info-card-email">csavadi [at] ncsu [dot] edu</p>
-        <div style="display: flex;">
-          <div class="social-list">
-            <ul class="nav text-center">
-            
-              <li class="nav-item">
-                <a class="social-icon" href="https://github.com/savadikarc" title="Github">
-                      <i class="fa-brands fa-github"></i>
-                </a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="social-icon" href="https://twitter.com/savadikarc" title="Twitter">
-                      <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="social-icon" href="https://scholar.google.com/citations?hl=en&user=0SpINWEAAAAJ" title="Google Scholar">
-                      <i class="ai ai-google-scholar-square"></i>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="social-icon" href="https://www.linkedin.com/in/savadikar-chinmay" title="LinkedIn">
-                      <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="social-icon" href="/cv.pdf" title="CV">
-                      <i class="ai ai-cv-square"></i>
-                </a>
-              </li>
-              
-            </ul>
-          </div>
-        </div>
+    <div class="row header justify-content-center margin-left margin-right">
+      <div class="col-md-4 text-center pad decorate-gray margin">
+        {% include info.html %}
       </div>
-      <div class="col-md-8 pad">
-        
-        <div class="flex-row flex-wrap info-card padding-right margin-right-zero">
-          <ul class="list-inline">
-            <li class="list-inline-item"><a class="link" href="https://savadikarc.github.io">Home</a></li>
-          </ul>
-    
-          <p class="about">I am a second year Ph.D. student at North Carolina State University advised by <a href="https://ece.ncsu.edu/people/twu19/">Dr. Tianfu Wu</a>. My research interest lies in Continual Learning, with broader interest in efficient and robust learning.</p>
-
-          <p class="about">Prior to starting my Ph.D., I worked with the <a href="https://precisionsustainableag.org/">Precision Sustainable Agriculture</a> initiative at NC State to build Computer Vision and Software solutions for problems in agriculture.</p>
-
-          <p class="about">I worked as a Machine Learning Engineer at Persistent Systems before coming back to academia. At Persistent, I worked on Deep Learning for Medical Imaging and large scale document recognition. I also spent some time developing internal SDKs for the Data Science team, and setting up MLOps frameworks.</p>
-        
-          <p class="about">Outside of research, I like <a href="https://www.goodreads.com/user/show/57336050-chinmay-savadikar" title="Goodreads">reading</a>, enjoy playing Football (I will not call it Soccer, sorry), listening to Oldies Rock Music, and binge watching TV shows. </p>
-        </div>
+      <div class="col pad decorate-yellow margin">
+        {% include bio.html %}
       </div>
     </div>
 
@@ -90,9 +36,9 @@ title: Chinmay Savadikar
           <h2>Publications</h2>
         </div>
 
-        <div class="row decorate-purple justify-content-center align-items-center margin-bottom">
+        <div class="row decorate-purple justify-content-center align-items-center margin-bottom margin2">
             <div class="col-xs-4 col-md-4 text-center pad-top pad-bottom paper-thumbnail">
-              <img class="pub-thumbnail" src="assets/images/gift.jpg">
+              <img class="pub-thumbnail" src="assets/images/gift.svg">
             </div>
             <div class="col-md-8 paper-description">
               <a href="https://arxiv.org/abs/2312.00700" class="paper-title">GIFT: Generative Interpretable Fine-Tuning</a>
@@ -119,9 +65,9 @@ title: Chinmay Savadikar
             </div>
         </div>
 
-        <div class="row decorate-purple justify-content-center align-items-center">
+        <div class="row decorate-purple justify-content-center align-items-center margin2">
           <div class="col-xs-4 col-md-4 text-center pad-top pad-bottom paper-thumbnail">
-            <img class="pub-thumbnail" src="assets/images/artihippo.jpg">
+            <img class="pub-thumbnail" src="assets/images/artihippo.svg">
           </div>
           <div class="col-md-8 paper-description">
             <a href="https://arxiv.org/abs/2303.08250" class="paper-title">Transforming Transformers for Resilient Lifelong Learning</a>
@@ -145,7 +91,7 @@ title: Chinmay Savadikar
   </div>
   </div>
 
-    <div class="row margin-left margin-right">
+    <div class="row margin-left margin-right border-top">
       <div class="col">
         <p align="right"><i>Website inspirations: <a href="https://www.tejasgokhale.com/">Tejas Gokhale</a> and <a href="https://somepago.github.io/">Gowthami Somepalli</a>.</i></p>
       </div>
