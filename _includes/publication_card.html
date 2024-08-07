@@ -1,0 +1,33 @@
+<div class="row decorate-purple justify-content-center align-items-center margin-bottom margin2">
+  <div class="col-xs-4 col-md-4 text-center pad-top pad-bottom paper-thumbnail">
+    <img class="pub-thumbnail" src="{{ include.pub.thumbnail | prepend: 'assets/images/' }}">
+  </div>
+  <div class="col-md-8 paper-description">
+    <a href="{{ include.pub.link }}" class="paper-title">{{ include.pub.title }}</a>
+    <br>
+    <a class="venue">{{ include.pub.venue }}</a>
+    <br>
+    {% for author in include.pub.authors %}
+      <!-- If url present for the author, add href to a otherwise dont -->
+      {% if author.url %}
+        <a class="author" href="{{ author.url }}">{{ author.name }}</a>{% if forloop.last == false %},{% endif %}
+      {% else %}
+        <a class="author">{{ author.name }}</a>{% if forloop.last == false %},{% endif %}
+      {% endif %}
+    {% endfor %}
+    <br>
+    {% if include.pub.pdf %}
+      <a href="{{ include.pub.pdf }}" class="pub-badge paper-badge badge badge-sm text-decoration-none mb-1">paper</a>
+    {% endif %}
+    {% if include.pub.web %}
+      <a href="{{ include.pub.web }}" class="pub-badge web-badge badge badge-sm text-decoration-none mb-1">web</a>
+    {% endif %}
+    {% if include.pub.code %}
+      <a href="{{ include.pub.code }}" class="pub-badge code-badge badge badge-sm text-decoration-none mb-1">code</a>
+    {% endif %}
+
+    <p class="description">
+      {{ include.pub.description }}
+    </p>
+  </div>
+</div>

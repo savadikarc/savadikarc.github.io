@@ -30,5 +30,16 @@ kramdown:
       line_numbers: false
       start_line: 1
 
-plugins:
-    - jekyll-redirect-from
+collections_dir: data
+
+collections:
+  publications:
+    title: true
+    link: true
+    venue: true
+    thumbnail: true
+    authors: true
+    pdf: true
+    web: true
+    code: true
+    sort_by: date

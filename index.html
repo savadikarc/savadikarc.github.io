@@ -4,10 +4,11 @@ title: Chinmay Savadikar
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
   <title>{{ page.title }}</title>
-  <!-- Bootstrap 4.6.2 CSS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
   <!-- Custom CSS -->
   <link href="/assets/css/fontawesome/css/fontawesome.css" rel="stylesheet">
@@ -17,6 +18,7 @@ title: Chinmay Savadikar
   <link rel="stylesheet" href="assets/css/styles.css">
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
+
 <body>
   <!-- Main container -->
   <div class="container">
@@ -25,7 +27,7 @@ title: Chinmay Savadikar
       <div class="col-md-4 text-center pad decorate-gray margin">
         {% include info.html %}
       </div>
-      <div class="col pad decorate-yellow margin">
+      <div class="col pad decorate-violet margin">
         {% include bio.html %}
       </div>
     </div>
@@ -35,60 +37,10 @@ title: Chinmay Savadikar
         <div class="row title border-bottom pad-left margin-top margin-bottom" id="publications">
           <h2>Publications</h2>
         </div>
-
-        <div class="row decorate-purple justify-content-center align-items-center margin-bottom margin2">
-            <div class="col-xs-4 col-md-4 text-center pad-top pad-bottom paper-thumbnail">
-              <img class="pub-thumbnail" src="assets/images/gift.svg">
-            </div>
-            <div class="col-md-8 paper-description">
-              <a href="https://arxiv.org/abs/2312.00700" class="paper-title">GIFT: Generative Interpretable Fine-Tuning</a>
-              <br>
-              <a class="venue">Preprint</a>
-              <br>
-              <a class="author"><b>Chinmay Savadikar</b></a>,
-              <a class="author">Xi Song</a>,
-              <a class="author" href="https://ece.ncsu.edu/people/twu19/">Tianfu Wu</a>
-              <br>
-              <a href="https://arxiv.org/pdf/2312.00700.pdf" class="pub-badge paper-badge badge badge-sm text-decoration-none mb-1">paper</a>
-              <a href="https://savadikarc.github.io/gift/" class="pub-badge web-badge badge badge-sm text-decoration-none mb-1">web</a>
-              <a href="https://github.com/savadikarc/gift" class="pub-badge code-badge badge badge-sm text-decoration-none mb-1">code</a>
-        
-              <p class="description">
-                GIFT is a method for parameter efficient fine-tuning of pretrained Transformer models with built-in interpretability. 
-                GIFT generates the fine-tuning residual weights \(\Delta\omega\) directly from the pretrained weights, 
-                and is shared across all the layers of the pretrained transformer selected for fine-tuning. Simply 
-                parameterizing GIFT with two plain linear layers (without bias terms) is surprisingly effective, i.e., 
-                \(\hat{\omega}=\omega \cdot (\mathbb{I}+\phi_{d_{in}\times r}\cdot \psi_{r\times d_{in}})\). On image classification tasks, 
-                the output of the first linear layer in GIFT
-                plays the role of a \(r\)-way segmentation head without being explicitly trained to do so.
-              </p>
-            </div>
-        </div>
-
-        <div class="row decorate-purple justify-content-center align-items-center margin2">
-          <div class="col-xs-4 col-md-4 text-center pad-top pad-bottom paper-thumbnail">
-            <img class="pub-thumbnail" src="assets/images/artihippo.svg">
-          </div>
-          <div class="col-md-8 paper-description">
-            <a href="https://arxiv.org/abs/2303.08250" class="paper-title">Transforming Transformers for Resilient Lifelong Learning</a>
-            <br>
-            <a class="venue">Preprint</a>
-            <br>
-            <a class="author"><b>Chinmay Savadikar</b></a>,
-            <a class="author">Michelle Dai</a>,
-            <a class="author" href="https://ece.ncsu.edu/people/twu19/">Tianfu Wu</a>
-            <br>
-            <a href="https://arxiv.org/pdf/2303.08250.pdf" class="pub-badge paper-badge badge badge-sm text-decoration-none mb-1">paper</a>
-      
-            <p class="description">
-              We present a method to add lightweight, learnable parameters to Vision Transformers while leveraging parameter-heavy, but stable components.
-              We show that the final linear projection layer in the multi-head self-attention (MHSA) block can be used as this light-weight module using a Mixture of Experts framework.
-              While most of the prior methods which address this problem induce learnable parameters at every layer, or heuristically choose where to do so, we use Neural Architecture Search to determine this automatically.
-              We use SPOS Neural Architecture Search and propose a task-similarity oriented sampling strategy to replace the uniform sampling and achieve better performance and efficiency than uniform sampling.
-            </p>
-          </div>
+        {% for publication in site.publications reversed %}
+          {% include publication_card.html pub=publication %}
+        {% endfor %}
       </div>
-  </div>
   </div>
 
     <div class="row margin-left margin-right border-top">
@@ -98,4 +50,5 @@ title: Chinmay Savadikar
   </div>
 
   </div>
-  
+</body>
+</html>
