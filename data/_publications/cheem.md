@@ -1,8 +1,8 @@
 ---
-title: "Transforming Transformers for Resilient Lifelong Learning"
+title: "Continual Learning via Learning a Continual Memory in Vision Transformer"
 link: https://arxiv.org/abs/2303.08250
 venue: Preprint
-thumbnail: artihippo.svg
+thumbnail: cheem.svg
 authors: 
     - name: "<b>Chinmay Savadikar</b>"
     - name: "Michelle Dai"
