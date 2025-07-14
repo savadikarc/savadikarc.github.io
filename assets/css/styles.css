@@ -136,7 +136,9 @@
 }
 
 .venue {
-    color: #6f6f7f !important;
+    color: #a21942 !important;
+    font-weight: bold ;
+    font-style: italic ;
 }
 
 .pub-badge {

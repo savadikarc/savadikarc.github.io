@@ -42,4 +42,4 @@ collections:
     pdf: true
     web: true
     code: true
-    sort_by: date
+    sort_by: order
