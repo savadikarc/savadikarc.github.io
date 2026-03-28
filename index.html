@@ -37,7 +37,8 @@ title: Chinmay Savadikar
         <div class="row title border-bottom pad-left margin-top margin-bottom" id="publications">
           <h2>Publications</h2>
         </div>
-        {% for publication in site.publications reversed %}
+        {% assign sorted_publications = site.publications | sort: "order" %}
+        {% for publication in sorted_publications %}
           {% include publication_card.html pub=publication %}
         {% endfor %}
       </div>
